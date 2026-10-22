@@ -1,6 +1,6 @@
 /* ==========================================================================
    TMJ Arthroscopy Micro-Tutor Design System
-   Surgical Dark/Light Cockpit Interface
+   Surgical Dark/Light Cockpit Interface (Desktop & Mobile Optimized)
    ========================================================================== */
 
 :root {
@@ -64,6 +64,7 @@ body.theme-light {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -74,6 +75,76 @@ body {
   overflow: hidden;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+button, a, input {
+  touch-action: manipulation;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile App Top Navigation Bar (Hidden on desktop)
+   -------------------------------------------------------------------------- */
+.mobile-nav-bar {
+  display: none;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.65rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 56px;
+}
+
+.menu-toggle-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mobile-brand-title {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--accent-cyan);
+}
+
+.close-sidebar-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+.close-sidebar-btn:hover {
+  color: var(--text-main);
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
+  z-index: 998;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.sidebar-backdrop.hidden {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* --------------------------------------------------------------------------
@@ -87,7 +158,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   Sidebar
+   Sidebar / Drawer
    -------------------------------------------------------------------------- */
 .sidebar {
   background: var(--bg-secondary);
@@ -96,6 +167,7 @@ body {
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .sidebar-header {
@@ -219,6 +291,7 @@ body {
   padding: 0 1.25rem 0.75rem;
   overflow-x: auto;
   border-bottom: 1px solid var(--border-subtle);
+  -webkit-overflow-scrolling: touch;
 }
 
 .part-btn {
@@ -245,6 +318,7 @@ body {
   flex: 1;
   overflow-y: auto;
   padding: 0.75rem 0.75rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .chapter-group {
@@ -252,7 +326,7 @@ body {
 }
 
 .chapter-header {
-  padding: 0.6rem 0.75rem;
+  padding: 0.65rem 0.75rem;
   border-radius: var(--radius-sm);
   cursor: pointer;
   display: flex;
@@ -302,12 +376,12 @@ body {
 }
 
 .module-list {
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
   margin-top: 0.25rem;
 }
 
 .module-item {
-  padding: 0.45rem 0.65rem;
+  padding: 0.55rem 0.65rem;
   border-radius: var(--radius-sm);
   font-size: 0.78rem;
   color: var(--text-secondary);
@@ -315,7 +389,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   transition: all 0.15s;
 }
 
@@ -343,6 +417,7 @@ body {
   font-size: 0.75rem;
   color: var(--text-secondary);
   cursor: pointer;
+  padding: 0.25rem 0.5rem;
 }
 
 .utility-btn:hover {
@@ -366,7 +441,7 @@ body {
 
 /* Top Bar */
 .top-bar {
-  padding: 1rem 2rem;
+  padding: 0.85rem 1.5rem;
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
@@ -379,6 +454,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   font-size: 0.85rem;
+  overflow: hidden;
 }
 
 .badge-part {
@@ -389,6 +465,7 @@ body {
   border-radius: 4px;
   font-size: 0.72rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .sep {
@@ -398,22 +475,25 @@ body {
 .chapter-name {
   font-weight: 700;
   color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .action-buttons {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .btn {
-  padding: 0.5rem 0.9rem;
+  padding: 0.45rem 0.8rem;
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: var(--radius-sm);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
   transition: all 0.15s;
 }
 
@@ -447,20 +527,23 @@ body {
 .view-tabs {
   display: flex;
   gap: 0.5rem;
-  padding: 0.75rem 2rem 0;
+  padding: 0.65rem 1.5rem 0;
   border-bottom: 1px solid var(--border-subtle);
   background: var(--bg-secondary);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tab-btn {
   background: transparent;
   border: none;
   border-bottom: 2px solid transparent;
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 0.85rem;
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-muted);
   cursor: pointer;
+  white-space: nowrap;
   transition: all 0.2s;
 }
 
@@ -477,7 +560,8 @@ body {
 .tab-viewport {
   flex: 1;
   overflow-y: auto;
-  padding: 2rem;
+  padding: 1.75rem 1.5rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tab-content {
@@ -504,7 +588,7 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  padding: 2.25rem;
+  padding: 2rem;
 }
 
 .lesson-meta-bar {
@@ -512,7 +596,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.25rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.85rem;
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -530,7 +614,7 @@ body {
 }
 
 .lesson-title {
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   font-weight: 800;
   line-height: 1.3;
   margin-bottom: 0.5rem;
@@ -540,13 +624,13 @@ body {
 .lesson-author-source {
   font-size: 0.85rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 /* Section Blocks inside Lesson */
 .lesson-block {
-  margin-bottom: 1.75rem;
-  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.15rem 1.35rem;
   border-radius: var(--radius-md);
   background: var(--bg-primary);
   border: 1px solid var(--border-subtle);
@@ -569,10 +653,9 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 800;
-  margin-bottom: 0.65rem;
-  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
 }
 
 .block-header.core { color: var(--accent-cyan); }
@@ -623,7 +706,7 @@ body {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: 2.25rem;
+  padding: 2rem;
   box-shadow: var(--shadow-md);
 }
 
@@ -640,8 +723,8 @@ body {
   background: var(--bg-primary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 1.25rem;
-  margin-bottom: 1.5rem;
+  padding: 1.15rem;
+  margin-bottom: 1.25rem;
   font-size: 0.92rem;
   line-height: 1.6;
   color: var(--text-secondary);
@@ -649,10 +732,10 @@ body {
 }
 
 .quiz-question {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.4;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   color: var(--text-main);
 }
 
@@ -667,7 +750,7 @@ body {
   background: var(--bg-primary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 1rem 1.25rem;
+  padding: 0.9rem 1.15rem;
   text-align: left;
   font-size: 0.9rem;
   color: var(--text-main);
@@ -676,6 +759,7 @@ body {
   align-items: center;
   gap: 0.85rem;
   transition: all 0.2s;
+  min-height: 48px;
 }
 
 .quiz-opt-btn:hover:not(:disabled) {
@@ -747,7 +831,7 @@ body {
 .fc-scene {
   width: 100%;
   max-width: 650px;
-  height: 340px;
+  height: 320px;
   perspective: 1000px;
   cursor: pointer;
   margin-bottom: 1.5rem;
@@ -770,8 +854,9 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -799,12 +884,12 @@ body {
 }
 
 .fc-text {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
   color: var(--text-main);
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 .fc-hint {
@@ -815,8 +900,10 @@ body {
 
 .fc-controls {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Toast Notifications */
@@ -841,14 +928,121 @@ body {
   pointer-events: none;
 }
 
-@media (max-width: 800px) {
-  .app-layout { grid-template-columns: 1fr; height: auto; }
-  .sidebar { height: auto; max-height: 420px; border-right: none; border-bottom: 2px solid var(--border-subtle); }
-  .main-content { height: auto; }
-  .top-bar { padding: 0.85rem 1rem; flex-direction: column; align-items: stretch; gap: 0.75rem; }
-  .action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
-  .action-buttons #toggleCompleteBtn { grid-column: span 2; }
-  .view-tabs { padding: 0.5rem 1rem 0; overflow-x: auto; }
-  .tab-viewport { padding: 1rem; }
-  .surgical-card, .quiz-card { padding: 1.25rem 1rem; }
+/* ==========================================================================
+   Mobile Responsive Rules (< 900px Screen Width)
+   ========================================================================== */
+@media (max-width: 900px) {
+  body {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .mobile-nav-bar {
+    display: flex;
+  }
+
+  .close-sidebar-btn {
+    display: block;
+  }
+
+  .app-layout {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow-y: visible;
+  }
+
+  /* Sidebar becomes a sliding drawer */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    max-width: 85vw;
+    height: 100vh;
+    z-index: 999;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.6);
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .top-bar {
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .active-breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+  }
+
+  .action-buttons #toggleCompleteBtn {
+    grid-column: span 2;
+  }
+
+  .view-tabs {
+    padding: 0.5rem 1rem 0;
+  }
+
+  .tab-btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .tab-viewport {
+    padding: 1rem 0.85rem;
+    height: auto;
+    overflow-y: visible;
+    flex: none;
+  }
+
+  .surgical-card, .quiz-card {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .lesson-title {
+    font-size: 1.25rem;
+  }
+
+  .lesson-block {
+    padding: 0.95rem 1rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .fc-scene {
+    height: 360px;
+  }
+
+  .fc-face {
+    padding: 1.25rem 1rem;
+  }
+
+  .fc-text {
+    font-size: 1.05rem;
+  }
+
+  .fc-controls {
+    width: 100%;
+  }
+
+  .fc-controls .btn {
+    flex: 1;
+    min-height: 44px;
+    justify-content: center;
+  }
 }

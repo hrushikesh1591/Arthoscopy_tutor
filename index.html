@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>TMJ Arthroscopy Micro-Tutor | OMFS Masterclass</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,9 +10,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body class="theme-dark">
+  <!-- Mobile App Header (Visible on Mobile / Small screens) -->
+  <header class="mobile-nav-bar">
+    <button id="menuToggleBtn" class="menu-toggle-btn" aria-label="Toggle Menu">
+      <span class="menu-icon">☰</span>
+      <span class="menu-text">Menu</span>
+    </button>
+    <div class="mobile-brand-title">TMJ Micro-Tutor</div>
+    <div class="streak-badge">
+      🔥 <span id="mobileStreakCount">1</span>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div id="sidebarBackdrop" class="sidebar-backdrop hidden"></div>
+
   <div class="app-layout">
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
+    <!-- Sidebar Navigation / Drawer -->
+    <aside class="sidebar" id="sidebarDrawer">
       <div class="sidebar-header">
         <div class="brand">
           <div class="brand-icon">🔬</div>
@@ -21,24 +36,22 @@
             <span class="brand-subtitle">Principles & Practice • McCain</span>
           </div>
         </div>
-        <div class="streak-badge" id="streakBadge" title="Study Streak">
-          🔥 <span id="streakCount">1</span> Day Streak
-        </div>
+        <button id="closeSidebarBtn" class="close-sidebar-btn" aria-label="Close Menu">✕</button>
       </div>
 
       <!-- Quick Metrics -->
       <div class="stats-card">
         <div class="stat-item">
-          <div class="stat-val" id="completedCount">0 / 18</div>
-          <div class="stat-label">Modules Done</div>
+          <div class="stat-val" id="completedCount">0 / 33</div>
+          <div class="stat-label">Modules</div>
         </div>
         <div class="stat-item">
           <div class="stat-val" id="quizScorePct">0%</div>
-          <div class="stat-label">Quiz Accuracy</div>
+          <div class="stat-label">Accuracy</div>
         </div>
         <div class="stat-item">
           <div class="stat-val" id="cardsMastered">0</div>
-          <div class="stat-label">Cards Mastered</div>
+          <div class="stat-label">Mastered</div>
         </div>
       </div>
 
@@ -61,13 +74,13 @@
       </nav>
 
       <div class="sidebar-footer">
-        <button id="themeToggleBtn" class="utility-btn">🌓 Toggle Theme</button>
-        <button id="resetProgressBtn" class="utility-btn text-muted">↺ Reset Progress</button>
+        <button id="themeToggleBtn" class="utility-btn">🌓 Theme</button>
+        <button id="resetProgressBtn" class="utility-btn text-muted">↺ Reset</button>
       </div>
     </aside>
 
     <!-- Main Content Workspace -->
-    <main class="main-content">
+    <main class="main-content" id="mainContent">
       <!-- Top Action Bar -->
       <header class="top-bar">
         <div class="active-breadcrumb" id="activeBreadcrumb">
@@ -77,22 +90,22 @@
         </div>
         <div class="action-buttons">
           <button id="listenAudioBtn" class="btn btn-secondary" title="Listen via Text-to-Speech">
-            🔊 Listen (Audio)
+            🔊 Listen
           </button>
           <button id="copyTelegramBtn" class="btn btn-secondary" title="Copy formatted Telegram daily message">
-            📱 Copy for Telegram
+            📱 Copy
           </button>
           <button id="toggleCompleteBtn" class="btn btn-primary">
-            ✓ Mark as Studied
+            ✓ Studied
           </button>
         </div>
       </header>
 
       <!-- View Tabs: Lesson vs Spaced Repetition Flashcards vs Quiz Mode -->
       <div class="view-tabs">
-        <button class="tab-btn active" data-tab="lesson">📖 Micro-Lesson Card</button>
+        <button class="tab-btn active" data-tab="lesson">📖 Lesson Card</button>
         <button class="tab-btn" data-tab="quiz">🧠 Surgical Challenge</button>
-        <button class="tab-btn" data-tab="flashcards">🗂️ Flashcard Deck (<span id="flashcardCountBadge">0</span>)</button>
+        <button class="tab-btn" data-tab="flashcards">🗂️ Flashcards (<span id="flashcardCountBadge">0</span>)</button>
       </div>
 
       <!-- Dynamic Tab Views -->

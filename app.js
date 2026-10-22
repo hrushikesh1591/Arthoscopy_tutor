@@ -23,6 +23,7 @@
   let currentModule = null;
   let currentActiveTab = 'lesson';
   let currentFcIndex = 0;
+
   let isSpeaking = false;
 
   // Load saved state
@@ -47,6 +48,11 @@
   const themeToggleBtn = document.getElementById('themeToggleBtn');
   const resetProgressBtn = document.getElementById('resetProgressBtn');
   const streakCountEl = document.getElementById('streakCount');
+  const mobileStreakCountEl = document.getElementById('mobileStreakCount');
+  const menuToggleBtn = document.getElementById('menuToggleBtn');
+  const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+  const sidebarDrawer = document.getElementById('sidebarDrawer');
+  const sidebarBackdrop = document.getElementById('sidebarBackdrop');
   const completedCountEl = document.getElementById('completedCount');
   const quizScorePctEl = document.getElementById('quizScorePct');
   const cardsMasteredEl = document.getElementById('cardsMastered');
@@ -115,7 +121,8 @@
     }
 
     localStorage.setItem(STORAGE_KEYS.STREAK, JSON.stringify(streakData));
-    streakCountEl.textContent = streakData.count;
+    if (streakCountEl) streakCountEl.textContent = streakData.count;
+    if (mobileStreakCountEl) mobileStreakCountEl.textContent = streakData.count;
   }
 
   // ---------------------------------------------------------------------------
@@ -232,6 +239,13 @@
 
     // Update active tab count badge
     flashcardCountBadge.textContent = chapter.flashcards ? chapter.flashcards.length : 0;
+
+    // On mobile, close drawer automatically and scroll smoothly to top
+    if (window.innerWidth <= 900 && sidebarDrawer) {
+      sidebarDrawer.classList.remove('open');
+      if (sidebarBackdrop) sidebarBackdrop.classList.add('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   function updateCompleteButton(isDone) {
@@ -387,7 +401,7 @@
               <span>Category: ${card.category}</span>
             </div>
             <div class="fc-text">${card.front}</div>
-            <div class="fc-hint">👆 Click anywhere to flip & reveal operative answer</div>
+            <div class="fc-hint">👆 Tap to flip • Swipe left/right for next</div>
           </div>
 
           <!-- Back Face -->
@@ -397,7 +411,7 @@
               <span>${card.category}</span>
             </div>
             <div class="fc-text">${card.back}</div>
-            <div class="fc-hint">👆 Click to flip back</div>
+            <div class="fc-hint">👆 Tap to flip back • Swipe for next</div>
           </div>
         </div>
       </div>
@@ -411,8 +425,39 @@
 
     const fcScene = document.getElementById('fcScene');
     const fcCard = document.getElementById('fcCard');
-    fcScene.addEventListener('click', () => {
-      fcCard.classList.toggle('is-flipped');
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    fcScene.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    fcScene.addEventListener('touchend', (e) => {
+      const diffX = e.changedTouches[0].screenX - touchStartX;
+      const diffY = e.changedTouches[0].screenY - touchStartY;
+      // If horizontal swipe detected
+      if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0 && currentFcIndex < cards.length - 1) {
+          // Swipe Left -> Next
+          currentFcIndex++;
+          renderFlashcardsView(chapter);
+        } else if (diffX > 0 && currentFcIndex > 0) {
+          // Swipe Right -> Prev
+          currentFcIndex--;
+          renderFlashcardsView(chapter);
+        }
+      } else if (Math.abs(diffX) < 15 && Math.abs(diffY) < 15) {
+        // Tap -> Flip
+        fcCard.classList.toggle('is-flipped');
+      }
+    }, { passive: true });
+
+    fcScene.addEventListener('click', (e) => {
+      // For desktop pointer
+      if (!('ontouchstart' in window)) {
+        fcCard.classList.toggle('is-flipped');
+      }
     });
 
     document.getElementById('fcPrevBtn').addEventListener('click', () => {
@@ -627,11 +672,31 @@ Q: ${currentModule.challenge.question}
     });
 
     // Action buttons
-    listenAudioBtn.addEventListener('click', toggleSpeech);
-    copyTelegramBtn.addEventListener('click', copyTelegramDigest);
-    toggleCompleteBtn.addEventListener('click', toggleCompleteModule);
-    themeToggleBtn.addEventListener('click', toggleTheme);
-    resetProgressBtn.addEventListener('click', resetAllProgress);
+    if (listenAudioBtn) listenAudioBtn.addEventListener('click', toggleSpeech);
+    if (copyTelegramBtn) copyTelegramBtn.addEventListener('click', copyTelegramDigest);
+    if (toggleCompleteBtn) toggleCompleteBtn.addEventListener('click', toggleCompleteModule);
+    if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
+    if (resetProgressBtn) resetProgressBtn.addEventListener('click', resetAllProgress);
+
+    // Mobile Drawer Toggle
+    if (menuToggleBtn && sidebarDrawer) {
+      menuToggleBtn.addEventListener('click', () => {
+        sidebarDrawer.classList.add('open');
+        if (sidebarBackdrop) sidebarBackdrop.classList.remove('hidden');
+      });
+    }
+    if (closeSidebarBtn && sidebarDrawer) {
+      closeSidebarBtn.addEventListener('click', () => {
+        sidebarDrawer.classList.remove('open');
+        if (sidebarBackdrop) sidebarBackdrop.classList.add('hidden');
+      });
+    }
+    if (sidebarBackdrop && sidebarDrawer) {
+      sidebarBackdrop.addEventListener('click', () => {
+        sidebarDrawer.classList.remove('open');
+        sidebarBackdrop.classList.add('hidden');
+      });
+    }
   }
 
   // Start app
