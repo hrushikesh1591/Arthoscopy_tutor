@@ -1,7 +1,10 @@
 """
-TMJ Arthroscopy Micro-Tutor — Render 24/7 Cloud Service
+TMJ Arthroscopy Micro-Tutor — Render 24/7 Cloud Service & Mobile Web App
 Bot: @Arthoscopy_Microtutor_bot
-Combines Telegram Long-Polling + HTTP Health Check Server for Render Free Web Service.
+Web App: https://arthoscopy-tutor.onrender.com
+
+Serves the interactive mobile-friendly Surgical Cockpit Web App on HTTP
+while concurrently running the Telegram Bot polling daemon in the background.
 """
 
 import json
@@ -9,6 +12,7 @@ import os
 import sys
 import time
 import threading
+import urllib.parse
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import requests
 import urllib3
@@ -27,28 +31,62 @@ CURRICULUM_PATH = os.path.join(BASE_DIR, "curriculum.json")
 USER_STATE_PATH = os.path.join(BASE_DIR, "bot_user_state.json")
 
 # ---------------------------------------------------------------------------
-# Lightweight HTTP Health Check Server (Satisfies Render Free Web Service)
+# Web App & Static File HTTP Server (Serves Mobile Dashboard)
 # ---------------------------------------------------------------------------
-class HealthCheckHandler(BaseHTTPRequestHandler):
+MIME_TYPES = {
+    ".html": "text/html; charset=utf-8",
+    ".css": "text/css; charset=utf-8",
+    ".js": "application/javascript; charset=utf-8",
+    ".json": "application/json; charset=utf-8",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".svg": "image/svg+xml",
+    ".ico": "image/x-icon"
+}
+
+class DashboardHTTPHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        self.send_response(200)
-        self.send_header("Content-type", "application/json")
-        self.end_headers()
-        status = {
-            "status": "online",
-            "bot": "TMJ Arthroscopy Micro-Tutor",
-            "telegram_handle": "@Arthoscopy_Microtutor_bot",
-            "source": "Principles and Practice of TMJ Arthroscopy by Joseph P. McCain"
-        }
-        self.wfile.write(json.dumps(status).encode("utf-8"))
+        parsed = urllib.parse.urlparse(self.path)
+        req_path = parsed.path.strip()
+        
+        # Default root serves index.html (the mobile web app dashboard)
+        if req_path in ["", "/"]:
+            req_path = "/index.html"
+            
+        # Security: sanitize path against directory traversal
+        clean_path = os.path.normpath(req_path.lstrip("/"))
+        file_path = os.path.join(BASE_DIR, clean_path)
+        
+        if os.path.exists(file_path) and os.path.isfile(file_path):
+            ext = os.path.splitext(file_path)[1].lower()
+            content_type = MIME_TYPES.get(ext, "application/octet-stream")
+            
+            try:
+                with open(file_path, "rb") as f:
+                    content = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", content_type)
+                self.send_header("Content-Length", str(len(content)))
+                self.send_header("Cache-Control", "no-cache")
+                self.end_headers()
+                self.wfile.write(content)
+            except Exception as e:
+                self.send_response(500)
+                self.end_headers()
+                self.wfile.write(f"500 Internal Error: {e}".encode("utf-8"))
+        else:
+            self.send_response(404)
+            self.send_header("Content-Type", "text/plain; charset=utf-8")
+            self.end_headers()
+            self.wfile.write(b"404 Not Found")
 
     def log_message(self, format, *args):
         # Suppress noisy HTTP health log pings
         return
 
 def run_http_server():
-    server = HTTPServer(("0.0.0.0", PORT), HealthCheckHandler)
-    print(f"[HTTP Health Server] Listening on 0.0.0.0:{PORT}")
+    server = HTTPServer(("0.0.0.0", PORT), DashboardHTTPHandler)
+    print(f"[Mobile Web Server] Listening on 0.0.0.0:{PORT} (Serving Mobile Dashboard)")
     server.serve_forever()
 
 # ---------------------------------------------------------------------------
@@ -136,14 +174,14 @@ def get_main_reply_keyboard():
         "keyboard": [
             [{"text": "📚 Today's Lesson"}, {"text": "🧠 Surgical Challenge"}],
             [{"text": "🗂️ Flashcard Deck"}, {"text": "📊 My Progress"}],
-            [{"text": "📖 Jump to Chapter"}, {"text": "❓ Help & Reference"}]
+            [{"text": "📖 Jump to Chapter"}, {"text": "🌐 Open Mobile Web App"}]
         ],
         "resize_keyboard": True,
         "is_persistent": True
     }
 
 # ---------------------------------------------------------------------------
-# Commands & Message Handlers
+# Telegram Commands & Message Handlers
 # ---------------------------------------------------------------------------
 def handle_start(chat_id, user_data):
     name = user_data.get("first_name", "Doctor")
@@ -156,7 +194,8 @@ def handle_start(chat_id, user_data):
         f"• 📚 **Surgical Bite Lessons:** Step-by-step portals, optics, triangulation & danger zones\n"
         f"• 🧠 **1-Min Surgical Challenges:** Operative dilemma MCQs with instant feedback\n"
         f"• 🗂️ **Spaced Repetition Flashcards:** Anatomic coordinates & landmarks\n"
-        f"• 📊 **Progress & Streak Tracking:** Real-time completion logs\n\n"
+        f"• 📊 **Progress & Streak Tracking:** Real-time completion logs\n"
+        f"• 🌐 **Mobile Web Cockpit:** [Open in Browser](https://arthoscopy-tutor.onrender.com)\n\n"
         f"👇 *Tap 'Today's Lesson' below to start your surgical module!*"
     )
     send_message(chat_id, msg, reply_markup=get_main_reply_keyboard())
@@ -304,7 +343,7 @@ def handle_progress(chat_id, user_data, flat_modules):
         f"Chapter {current_item['chapter']['number']}: {current_item['chapter']['title']}\n"
         f"Module: {current_item['module']['title']}\n"
         f"━━━━━━━━━━━━━━━━━━━━━━\n"
-        f"Keep going! Daily micro-retention creates surgical mastery."
+        f"🌐 *Open Mobile Web App:* https://arthoscopy-tutor.onrender.com"
     )
     send_message(chat_id, msg)
 
@@ -317,14 +356,16 @@ def handle_chapter_menu(chat_id, curriculum):
     inline_kb = {"inline_keyboard": buttons}
     send_message(chat_id, msg, reply_markup=inline_kb)
 
-def handle_help(chat_id):
+def handle_web_app(chat_id):
     msg = (
-        f"❓ *TMJ ARTHROSCOPY MICRO-TUTOR GUIDE*\n\n"
-        f"• *📚 Today's Lesson:* Displays the next sequential 3-minute surgical card\n"
-        f"• *🧠 Surgical Challenge:* Tests your intraoperative decision-making\n"
-        f"• *🗂️ Flashcard Deck:* Interactive active-recall review cards\n"
-        f"• *📊 My Progress:* Detailed stats and mastery dashboard\n"
-        f"• *📖 Jump to Chapter:* Browse any of the 18 textbook chapters\n"
+        f"🌐 *TMJ ARTHROSCOPY MOBILE WEB APP*\n\n"
+        f"You can open the full visual surgical cockpit on your mobile browser anytime here:\n"
+        f"👉 https://arthoscopy-tutor.onrender.com\n\n"
+        f"Features available in your browser:\n"
+        f"• 🔊 Listen to surgical lessons via Text-to-Speech\n"
+        f"• 🗂️ 3D Flip Flashcards deck\n"
+        f"• 🧠 Interactive decision quizzes\n"
+        f"• 🔍 Real-time search across all 18 chapters & danger zones"
     )
     send_message(chat_id, msg)
 
@@ -464,14 +505,14 @@ def process_callback_query(cb, flat_modules, curriculum, state):
 def main():
     print("==================================================")
     print("TMJ Arthroscopy Micro-Tutor — Render Cloud Daemon")
-    print(f"Port: {PORT}")
+    print(f"Port: {PORT} (Serving Mobile Web App)")
     print("==================================================")
     
     curriculum = load_curriculum()
     flat_modules = get_all_modules_flat(curriculum)
     state = load_user_state()
     
-    # 1. Start HTTP Health Check server in background daemon thread
+    # 1. Start HTTP Static Web Server in background daemon thread
     http_thread = threading.Thread(target=run_http_server, daemon=True)
     http_thread.start()
     
@@ -479,7 +520,6 @@ def main():
     me = tg_request("getMe")
     if not me.get("ok"):
         print("ERROR connecting to Telegram:", me)
-        # Keep process alive so Render doesn't crash-loop if credentials temporarily fail
         while True:
             time.sleep(10)
             
@@ -516,8 +556,8 @@ def main():
                         handle_progress(chat_id, user_data, flat_modules)
                     elif text in ["/chapters", "📖 Jump to Chapter"]:
                         handle_chapter_menu(chat_id, curriculum)
-                    elif text in ["/help", "❓ Help & Reference"]:
-                        handle_help(chat_id)
+                    elif text in ["/webapp", "🌐 Open Mobile Web App"]:
+                        handle_web_app(chat_id)
                     else:
                         handle_start(chat_id, user_data)
                         

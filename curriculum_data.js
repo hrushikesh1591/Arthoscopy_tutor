@@ -1,0 +1,1415 @@
+window.TMJ_CURRICULUM = [
+  {
+    "id": "ch01",
+    "number": 1,
+    "title": "History of TMJ Arthroscopy",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Joseph P. McCain, D.D.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-010-018.pdf",
+    "pages": "1-9",
+    "estimated_minutes": 8,
+    "overview": "Chronicles the evolution of arthroscopy from Takagi's pioneering knee endoscopies in 1918, through Watanabe's rod-lens advancements, to Ohnishi's breakthrough first TMJ arthroscopy in 1975 in Japan, and the subsequent American/European standardization led by McCain, Sanders, Murakami, and Holmlund-Hellsing.",
+    "modules": [
+      {
+        "id": "m01_01",
+        "title": "Origins & Early Milestones: Takagi, Watanabe, & Ohnishi (1975)",
+        "read_time": "3 min",
+        "core_concept": "Arthroscopy began with Kenji Takagi (1918) using a cystoscope in knee joints. Masaki Watanabe developed the classic No. 21 and No. 22 arthroscopes. In 1975, Masatoshi Ohnishi performed the world's first arthroscopic examination of a human temporomandibular joint in Japan using a 2 mm ultra-thin arthroscope, proving the feasibility of visualizing the upper joint compartment.",
+        "surgical_technique": "Early pioneer procedures relied on direct monocular viewing through eyepiece optics without video cameras. Access was obtained via blind puncture into the upper joint space (UJS) with saline distension, establishing that small-joint endoscopy could be performed safely without open arthrotomy.",
+        "danger_zones_pearls": "Historical caveat: Monocular viewing forced the surgeon's unsterile face adjacent to the surgical field, risking contamination. The advent of beam splitters and C-mount video cameras in the 1980s converted arthroscopy into an ergonomic, sterile, team-based procedure.",
+        "key_terms": [
+          "Kenji Takagi (1918)",
+          "Masaki Watanabe (No. 21 scope)",
+          "Masatoshi Ohnishi (1975)",
+          "Monocular viewing",
+          "Upper Joint Space (UJS)"
+        ],
+        "challenge": {
+          "scenario": "A surgical resident is asked during rounds about the historical transition from open TMJ discectomy/meniscectomy to minimally invasive endoscopic intervention.",
+          "question": "Who performed the first clinical diagnostic TMJ arthroscopy in history, and in what year?",
+          "options": [
+            "Joseph P. McCain in 1982",
+            "Masatoshi Ohnishi in 1975",
+            "Kenji Takagi in 1918",
+            "Bruce Sanders in 1986"
+          ],
+          "correct_index": 1,
+          "rationale": "Masatoshi Ohnishi of Tokyo Medical University performed the first clinical TMJ arthroscopy in 1975 using a modified Watanabe arthroscope, demonstrating visualization of the superior joint space in live patients."
+        }
+      },
+      {
+        "id": "m01_02",
+        "title": "The North American Paradigm Shift & Lysis/Lavage Revolution",
+        "read_time": "3 min",
+        "core_concept": "Prior to 1985, TMJ internal derangements were treated almost exclusively with aggressive open arthrotomy, disk plication, or silastic implant interposition (which often caused catastrophic foreign-body giant-cell granulomas). In 1986, Bruce Sanders and Joseph McCain demonstrated that arthroscopic lysis and lavage (L&L) of the upper joint space relieved closed-lock pain and restored range of motion even without permanent anatomical reduction of the displaced disc.",
+        "surgical_technique": "Lysis and lavage relies on: 1) Hydraulic distension with lactated Ringer's to free fine fibrous adhesions, 2) Lavage of microvascular inflammatory mediators (cytokines, prostaglandins, free radicals), and 3) Mobilization of the disc from the glenoid fossa roof.",
+        "danger_zones_pearls": "Surgical Pearl: Sanders' discovery fundamentally challenged the dogma that the articular disc MUST be surgically reduced to normal position for pain relief. Decompression and biochemical clearance alone achieve clinical success in over 85% of acute/subacute closed locks.",
+        "key_terms": [
+          "Lysis and Lavage (L&L)",
+          "Hydraulic distension",
+          "Bruce Sanders",
+          "Silastic foreign body reaction",
+          "Biochemical clearance"
+        ],
+        "challenge": {
+          "scenario": "A 28-year-old female presents with acute TMJ closed lock (mouth opening 22 mm). Diagnostic arthroscopy reveals Wilkes Stage III disc displacement without reduction. You perform arthroscopic lysis and lavage.",
+          "question": "What is the primary scientific mechanism explaining pain relief and restoration of motion following arthroscopic lysis and lavage, even if post-op MRI shows persistent anterior disc displacement?",
+          "options": [
+            "Permanent lengthening of the stylomandibular ligament",
+            "Breakdown of fibrous adhesions and washout of inflammatory pain mediators (TNF-a, IL-1, PGE2) from the synovial fluid",
+            "Complete denervation of the auriculotemporal nerve by high irrigation pressures",
+            "Surgical resection of the posterior bilaminar zone"
+          ],
+          "correct_index": 1,
+          "rationale": "Arthroscopic lysis and lavage functions by breaking down fine vacuum-seal intra-articular adhesions and flushing out algogenic and degradative mediators (prostaglandins, cytokines, leukotrienes), eliminating pain and restoring condylar translation without requiring open anatomical disc repositioning."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "Who performed the first TMJ arthroscopy in history, and when?",
+        "back": "Masatoshi Ohnishi in 1975 (Tokyo, Japan).",
+        "category": "History"
+      },
+      {
+        "front": "Who popularized arthroscopic lysis and lavage (L&L) in North America?",
+        "back": "Bruce Sanders (1986) along with Joseph P. McCain and Ralph Buoncristiani.",
+        "category": "History"
+      },
+      {
+        "front": "Why did lysis and lavage revolutionize TMJ surgery?",
+        "back": "It demonstrated that restoring hydraulic joint mechanics and washing out inflammatory cytokines relieved pain without requiring destructive open joint arthrotomy.",
+        "category": "Concepts"
+      }
+    ]
+  },
+  {
+    "id": "ch02",
+    "number": 2,
+    "title": "Instrument Development & Optics",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Leonard Bonnell, Ralph D. Buoncristiani, Michael Koslin, Joseph P. McCain, Michael A. Menis",
+    "pdf_file": "principles and practice of TMJ arthroscopy-019-049.pdf",
+    "pages": "11-41",
+    "estimated_minutes": 14,
+    "overview": "Detailed breakdown of the physical hardware essential to TMJ arthroscopy: Rod-lens optical trains vs fiber optics, 0° vs 30° viewing angles, video cameras, electrosurgical and Holmium:YAG laser units, irrigation inflow/outflow trocars, blunt vs sharp obturators, and motorized micro-shavers/burrs.",
+    "modules": [
+      {
+        "id": "m02_01",
+        "title": "Arthroscope Optics: Hopkins Rod-Lens & Angle of Inclination (0° vs 30°)",
+        "read_time": "4 min",
+        "core_concept": "TMJ arthroscopes typically range from 1.9 mm to 2.7 mm in outer diameter. Harold Hopkins' rod-lens design replaces air spaces with long glass rods separated by thin air lenses, providing 80x greater light transmission, wider field of view, and superior resolution compared to conventional thin-lens or bundle systems. The 30° angled scope is the gold standard for TMJ arthroscopy because rotating the light post sweeps a panoramic conical field without tilting the cannula.",
+        "surgical_technique": "When navigating the restricted upper joint space (volume ~1.0-1.5 mL), a 30° arthroscope is inserted with the light cable facing superiorly to inspect the glenoid fossa roof. Rotating the light cable 180° downward allows panoramic inspection of the disc surface and posterior attachment without traumatizing delicate retrodiscal synovium.",
+        "danger_zones_pearls": "Operating Pearl: Never rotate the camera head or zoom coupler while inspecting. Instead, rotate the scope body itself by turning the light cable attachment. A 0° scope looks directly forward ('tunnel vision') and requires broad levering that risks cartilage scuffing or trocar bending in the narrow TMJ space.",
+        "key_terms": [
+          "Hopkins Rod-Lens",
+          "30° Angle of Inclination",
+          "Field of View",
+          "Light Cable Rotation",
+          "1.9 mm - 2.7 mm Scopes"
+        ],
+        "challenge": {
+          "scenario": "During TMJ arthroscopy, you are inspecting the posterior pouch and need to view the anterior slope of the articular eminence without tilting the outer cannula aggressively against the zygomatic arch.",
+          "question": "Which optical configuration offers the greatest field of inspection through simple axial rotation of the light post?",
+          "options": [
+            "0° direct forward-viewing arthroscope",
+            "30° oblique viewing arthroscope",
+            "70° retrograde arthroscope",
+            "90° lateral viewing arthroscope"
+          ],
+          "correct_index": 1,
+          "rationale": "A 30° oblique arthroscope allows the surgeon to scan a wide conical panoramic field simply by rotating the light post around the optical axis, eliminating the need to physically lever the cannula against bone."
+        }
+      },
+      {
+        "id": "m02_02",
+        "title": "Sheaths, Obturators, Outflow Cannulas, and Irrigation Dynamics",
+        "read_time": "4 min",
+        "core_concept": "The arthroscopic cannula/sheath protects the delicate glass rod-lens and provides the inflow conduit for fluid irrigation. Sharp trocars are used ONLY to pierce the skin and subcutaneous fascia. Once capsule periosteum is reached, the sharp trocar MUST be replaced with a blunt or bullet-nosed obturator to prevent scuffing articular cartilage or perforating the glenoid fossa roof.",
+        "surgical_technique": "Constant irrigation maintains hydraulic joint distension, clears bleeding, and prevents thermal heat accumulation from high-intensity fiberoptic light sources (which can exceed 60°C at the tip if fluid flow stops). Fluid pressure is maintained at 40-60 mmHg via gravity (bags suspended 70-100 cm above the joint) or calibrated peristaltic infusion pumps.",
+        "danger_zones_pearls": "Danger Zone: If irrigation inflow continues while outflow is obstructed, intra-articular pressure escalates rapidly, forcing fluid through the capsule into the infratemporal fossa, pterygomandibular space, and lateral pharyngeal space. Always monitor pre-auricular and soft-palate fullness.",
+        "key_terms": [
+          "Sharp Trocar vs Blunt Obturator",
+          "Flow Dynamics (40-60 mmHg)",
+          "Fiberoptic Thermal Hazard",
+          "Extravasation Monitoring",
+          "Double-Puncture Triangulation"
+        ],
+        "challenge": {
+          "scenario": "You have inserted the arthroscope sheath through the pre-auricular puncture site. As you advance toward the superior joint space, you feel the resistance of the lateral capsule.",
+          "question": "What is the recommended trocar selection for piercing the capsule and entering the joint space safely?",
+          "options": [
+            "Keep the sharp pyramidal trocar in place and push firmly into the bone",
+            "Switch to a blunt or pyramidal obturator to penetrate capsule, walking on bone without gouging articular cartilage",
+            "Remove the cannula completely and insert a 10 mm scalpel blade through the capsule",
+            "Use high-energy monopolar electrosurgery to vaporize the capsule"
+          ],
+          "correct_index": 1,
+          "rationale": "The sharp trocar is used only to penetrate the skin and subcutaneous tissues. To enter the joint space, a blunt or conical obturator is used to pop through the capsule and 'walk' along the articular eminence, preventing scuffing of the fibrocartilage or perforation into the middle cranial fossa."
+        }
+      },
+      {
+        "id": "m02_03",
+        "title": "Operative Tools: Micro-Shavers, Burrs, Laser, & Electrosurgery",
+        "read_time": "3 min",
+        "core_concept": "Operative arthroscopy requires a second portal (anterior or anterolateral) for instrument triangulation. Instruments include micro-graspers, biopsy forceps, hook probes, 2.0 mm motorized full-radius shavers for synovial debridement, round burrs for chondroplasty/tubercleplasty, and Holmium:YAG laser / monopolar electrosurgery probes for soft tissue ablation and capsular release.",
+        "surgical_technique": "Motorized shavers are operated with continuous suction and irrigation. The cutting window must always face AWAY from the retrodiscal vascular pad and face TOWARD the pathological synovial plica or fibrillated cartilage to avoid massive intra-articular hemorrhage.",
+        "danger_zones_pearls": "Laser / Electrosurgery Pearl: Holmium:YAG laser (wavelength 2.1 um) has an optical penetration depth of only 0.4 mm in water, making it exceptionally safe for precise vaporization of adhesions without collateral deep thermal necrosis. Monopolar electrosurgery in a saline environment requires non-conductive irrigants (like glycine or sorbitol); if lactated Ringer's is used, bipolar radiofrequency (coblation) is strictly required.",
+        "key_terms": [
+          "2.0 mm Motorized Shavers",
+          "Holmium:YAG Laser (2.1 um)",
+          "Bipolar Coblation vs Monopolar",
+          "Triangulation",
+          "Synovial Debridement"
+        ],
+        "challenge": {
+          "scenario": "You are performing operative arthroscopic debridement of dense fibrous adhesions in the anterior recess using a motorized shaver.",
+          "question": "Which orientation of the shaver's cutting window is mandatory to prevent uncontrolled intra-articular hemorrhage?",
+          "options": [
+            "Directed posteriorly into the retrodiscal vascular tissue",
+            "Directed towards the pathology under direct arthroscopic visualization, away from the vascular posterior attachment",
+            "Operated blindly with maximum suction without irrigation flow",
+            "Pressed firmly against the thin roof of the glenoid fossa"
+          ],
+          "correct_index": 1,
+          "rationale": "Motorized cutting tools must always be kept under direct visual control, oriented directly toward the fibrous pathology and away from the delicate, highly vascular retrodiscal pad to prevent severe hemorrhage and visualization loss."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "Why is a 30° arthroscope preferred over a 0° scope in TMJ arthroscopy?",
+        "back": "A 30° scope allows a 360° panoramic conical field of view simply by rotating the light post, without levering the rigid sheath in the narrow joint.",
+        "category": "Instrumentation"
+      },
+      {
+        "front": "When should the sharp trocar be switched to a blunt obturator?",
+        "back": "Immediately after traversing the skin and superficial temporal fascia, before penetrating the capsule and walking onto bone.",
+        "category": "Instrumentation"
+      },
+      {
+        "front": "What is the typical irrigation inflow pressure used during TMJ arthroscopy?",
+        "back": "40 to 60 mmHg (achieved by gravity bags 70-100 cm above the patient or calibrated peristaltic pump).",
+        "category": "Instrumentation"
+      }
+    ]
+  },
+  {
+    "id": "ch03",
+    "number": 3,
+    "title": "Portals of Entry, Applied Functional Anatomy, & Arthroscopic Anatomy",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Joseph P. McCain, D.D.S., Ofilio J. Morales, D.M.D.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-050-061.pdf",
+    "pages": "42-53",
+    "estimated_minutes": 12,
+    "overview": "The definitive surgical blueprint for TMJ surface topography, puncture portals, and endoscopic landmarks. Detailed breakdown of the McCain-Holmlund reference line (tragus-lateral canthus), posterolateral portal, anterior/anterolateral portal, intermediate portals, and the endoscopic map of the Upper Joint Space (UJS).",
+    "modules": [
+      {
+        "id": "m03_01",
+        "title": "Surface Topography & The McCain-Holmlund Reference Line",
+        "read_time": "4 min",
+        "core_concept": "Safe entry into the TMJ requires strict adherence to surface bony landmarks. The Holmlund-Hellsing / McCain reference line connects the mid-tragus to the lateral canthus of the eye. This line corresponds closely to the superior border of the zygomatic arch and the roof of the glenoid fossa.",
+        "surgical_technique": "1) Posterolateral (Diagnostic) Portal: Measure 10 mm anterior to the mid-tragus along the canthal-tragal line, and 2 mm inferior. This entry targets the posterior recess of the superior joint space behind the condylar head.\n2) Anterior / Anterolateral (Operative) Portal: Measure 20-25 mm anterior along the line, and 8-10 mm inferior. This portal allows triangulation of instruments directly into the anterior recess and intermediate zone under direct visualization.",
+        "danger_zones_pearls": "Anatomical Danger: The temporal and zygomatic branches of the Facial Nerve (CN VII) cross the zygomatic arch approximately 20-25 mm anterior to the tragus. The anterior portal must stay inferior and anterior, placed with the patient's mouth distracted/manipulated to drop the joint space and push the nerve branches away.",
+        "key_terms": [
+          "Tragus-Canthal Baseline",
+          "Posterolateral Portal (10mm/2mm)",
+          "Anterolateral Portal (20mm/8mm)",
+          "Facial Nerve Temporal Branch",
+          "Upper Joint Space (UJS)"
+        ],
+        "challenge": {
+          "scenario": "You are marking the skin prior to drape and joint insufflation for a right diagnostic TMJ arthroscopy. You draw a line from the mid-tragus to the lateral canthus.",
+          "question": "What are the standard surface coordinates for the primary diagnostic posterolateral puncture portal?",
+          "options": [
+            "5 mm anterior, 10 mm superior",
+            "10 mm anterior along the baseline, 2 mm inferior",
+            "25 mm anterior along the baseline, 12 mm inferior",
+            "Directly on the tragus dome"
+          ],
+          "correct_index": 1,
+          "rationale": "The classic McCain-Holmlund coordinates for the posterolateral portal are 10 mm anterior to the mid-tragus along the canthal-tragal line and 2 mm inferior, safely accessing the posterior pouch of the upper joint space."
+        }
+      },
+      {
+        "id": "m03_02",
+        "title": "The Endoscopic Map of the Superior Joint Compartment (UJS)",
+        "read_time": "4 min",
+        "core_concept": "The upper joint space (UJS) has a distinct arthroscopic anatomy divided into three continuous zones: 1) Posterior Pouch (retrodiscal pad, bilaminar zone, posterior synovial plicae), 2) Intermediate Zone (dense white fibrocartilage of the articular disc dome opposing the temporal articular eminence), and 3) Anterior Pouch (anterior synovial recess, anterior disc attachment, pterygoid shadow).",
+        "surgical_technique": "Upon entering the posterior pouch, look for the 'red and white' contrast: The glistening white avascular intermediate zone of the biconcave disc meets the pink/red, highly vascular, convoluted retrodiscal synovium. As the scope advances anteriorly, the temporal articular eminence rises as a smooth, pearly-white convex ceiling.",
+        "danger_zones_pearls": "Diagnostic Pearl: In a healthy joint, the intermediate zone of the disc sits directly beneath the crest of the articular eminence during mouth closure. In anterior disc displacement without reduction (closed lock), the intermediate zone is absent from view, and the retrodiscal pad is pulled forward across the eminence crest, showing hyperemia and pseudodisc metaplasia.",
+        "key_terms": [
+          "Posterior Pouch",
+          "Intermediate Zone",
+          "Anterior Recess",
+          "Retrodiscal Synovium",
+          "Pterygoid Shadow",
+          "Articular Eminence"
+        ],
+        "challenge": {
+          "scenario": "During diagnostic arthroscopic sweeping of the upper joint space, you observe a pearly-white, avascular, fibrocartilaginous structure meeting a red, vascular, villous tissue fold. The patient's jaw is gently translated forward.",
+          "question": "What anatomical junction are you visualizing at this point?",
+          "options": [
+            "Junction between the medial pterygoid and styloid process",
+            "Junction between the posterior band of the articular disc and the vascular retrodiscal tissue (bilaminar zone)",
+            "Perforation into the external auditory canal",
+            "Sphenomandibular ligament attachment"
+          ],
+          "correct_index": 1,
+          "rationale": "The characteristic arthroscopic hallmark of the posterior pouch is the transition between the avascular white posterior band of the disc and the vascular, pink/red retrodiscal bilaminar tissue."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What are the coordinates for the posterolateral TMJ portal?",
+        "back": "10 mm anterior from mid-tragus, 2 mm inferior along the tragus-canthal line.",
+        "category": "Anatomy"
+      },
+      {
+        "front": "What are the coordinates for the anterolateral (operative) portal?",
+        "back": "20-25 mm anterior from mid-tragus, 8-10 mm inferior along the tragus-canthal line.",
+        "category": "Anatomy"
+      },
+      {
+        "front": "What is the normal synovial fluid volume of the superior TMJ space?",
+        "back": "Approximately 1.0 to 1.5 mL (can expand to 2-3 mL under hydraulic distension).",
+        "category": "Anatomy"
+      }
+    ]
+  },
+  {
+    "id": "ch04",
+    "number": 4,
+    "title": "Intraarticular Histology",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Ken-Ichiro Murakami, D.D.S., Ph.D.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-062-069.pdf",
+    "pages": "54-61",
+    "estimated_minutes": 10,
+    "overview": "Landmark histologic insights by Prof. Ken-Ichiro Murakami. Examines the fibrocartilaginous nature of TMJ articulating surfaces (differing from hyaline cartilage in other synovial joints), the cellular biology of the synovial intima (Type A macrophage-like vs Type B fibroblast-like synoviocytes), and the neural receptors of the retrodiscal bilaminar tissue.",
+    "modules": [
+      {
+        "id": "m04_01",
+        "title": "Fibrocartilaginous Articular Surface vs Hyaline Cartilage",
+        "read_time": "3 min",
+        "core_concept": "Unlike long-bone synovial joints (e.g. knee, hip) which are capped by hyaline cartilage, both the TMJ condyle and temporal articular eminence are covered by a dense, avascular fibrous/fibrocartilaginous tissue layer rich in Type I collagen. This confers unique biomechanical resistance to shear and compressive stress, as well as distinct regenerative and remodeling capacities.",
+        "surgical_technique": "Histologic layers from superficial to deep: 1) Articular zone (dense parallel collagen fibers), 2) Proliferative/cellular zone (undifferentiated mesenchymal cells responsible for remodeling), 3) Hypertrophic fibrocartilaginous zone, and 4) Subchondral bone plate. During arthroscopic debridement, never aggressively curette down to raw bleeding bone unless formal abrasion chondroplasty is indicated.",
+        "danger_zones_pearls": "Histologic Pearl: Because the superficial zone is dense fibrous tissue, superficial fibrillations and chondromalacia represent early disruption of collagen bundles. The proliferative layer provides the TMJ with an extraordinary capacity to undergo adaptive remodeling under altered biomechanical loading.",
+        "key_terms": [
+          "Fibrocartilage vs Hyaline",
+          "Type I Collagen",
+          "Proliferative Mesenchymal Zone",
+          "Chondromalacia",
+          "Adaptive Remodeling"
+        ],
+        "challenge": {
+          "scenario": "A pathology resident asks why the temporomandibular joint possesses significantly greater adaptive remodeling capacity and repair potential compared to the knee or hip.",
+          "question": "What unique histologic feature of the TMJ articulating surface accounts for this capability?",
+          "options": [
+            "It is covered by vascularized hyaline cartilage with Type II collagen only",
+            "The articulating surface is composed of dense fibrous connective tissue overlying an active proliferative zone of undifferentiated mesenchymal cells",
+            "The joint lacks subchondral bone",
+            "The disc contains multinucleated giant cells"
+          ],
+          "correct_index": 1,
+          "rationale": "The TMJ articulating surfaces are composed of fibrocartilage (primarily Type I collagen) with a subjacent proliferative layer of undifferentiated mesenchymal cells capable of continuous cellular division, matrix synthesis, and adaptive remodeling."
+        }
+      },
+      {
+        "id": "m04_02",
+        "title": "Synovial Membrane Cytology & Retrodiscal Neurovascular Architecture",
+        "read_time": "3 min",
+        "core_concept": "The TMJ synovial membrane lines all non-weight-bearing surfaces of the capsule and retrodiscal tissue. The intima is 1 to 3 cell layers thick and contains two distinct cell types: Type A synoviocytes (phagocytic, macrophage-like, rich in lysosomes, clearing cellular debris) and Type B synoviocytes (secretory, rich in rough endoplasmic reticulum, producing hyaluronic acid and lubricin). The retrodiscal pad contains Ruffini, Pacinian, Golgi-Mazzoni, and free nerve endings.",
+        "surgical_technique": "When inflammatory synovitis occurs, Type A cells hyper-proliferate, and subintimal post-capillary venules dilate. During lavage, flushing out inflammatory exudate restores normal hyaluronic acid lubrication, halting the cycle of cartilage breakdown.",
+        "danger_zones_pearls": "Clinical Pearl: The disc intermediate zone is completely avascular and aneuronal (it cannot feel pain). TMJ arthralgia originates almost entirely from the densely innervated and highly vascular retrodiscal pad (bilaminar zone) and joint capsule when compressed or chronically inflamed.",
+        "key_terms": [
+          "Type A Synoviocytes (Macrophage-like)",
+          "Type B Synoviocytes (Hyaluronate producers)",
+          "Retrodiscal Innervation",
+          "Lubricin & Hyaluronic Acid",
+          "Avascular Intermediate Zone"
+        ],
+        "challenge": {
+          "scenario": "A patient with severe TMJ arthralgia undergoes arthroscopic evaluation. The operating surgeon notes that touching the central intermediate zone of the disc with a blunt probe elicits no pain during local anesthesia testing, whereas touching the posterior attachment causes sharp pain.",
+          "question": "What is the histologic explanation for this finding?",
+          "options": [
+            "The intermediate zone has been denervated by the irrigation fluid",
+            "The central intermediate zone of the articular disc is normally avascular and aneuronal, while the retrodiscal bilaminar tissue is richly innervated with nociceptive nerve endings",
+            "The patient has complete facial nerve transection",
+            "The posterior attachment contains no blood vessels"
+          ],
+          "correct_index": 1,
+          "rationale": "Histologically, the central load-bearing intermediate zone of the disc is composed of compact avascular and aneural fibrocartilage. Pain in internal derangements is generated from mechanical compression and inflammatory stimulation of the richly innervated retrodiscal pad."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What type of cartilage covers the TMJ articulating surfaces?",
+        "back": "Fibrocartilage (predominantly Type I collagen), unlike hyaline cartilage in other major joints.",
+        "category": "Histology"
+      },
+      {
+        "front": "What are the two types of synoviocytes in the TMJ synovial intima?",
+        "back": "Type A (macrophage-like/phagocytic) and Type B (fibroblast-like/hyaluronic acid secretory).",
+        "category": "Histology"
+      },
+      {
+        "front": "Is the intermediate zone of the TMJ disc innervated or vascularized?",
+        "back": "No, it is normally completely avascular and aneuronal.",
+        "category": "Histology"
+      }
+    ]
+  },
+  {
+    "id": "ch05",
+    "number": 5,
+    "title": "Patient Selection & Clinical Management",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Joseph P. McCain, D.D.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-070-109.pdf",
+    "pages": "62-101",
+    "estimated_minutes": 15,
+    "overview": "Clinical decision-making for TMJ arthroscopy: Detailed correlation with Wilkes Staging of Internal Derangements (Stages I through V), non-surgical conservative therapy trial protocols, indications and contraindications for diagnostic vs operative arthroscopy, and pre-op surgical checklists.",
+    "modules": [
+      {
+        "id": "m05_01",
+        "title": "Wilkes Staging of Internal Derangements & Surgical Timing",
+        "read_time": "4 min",
+        "core_concept": "Wilkes classification defines 5 stages based on clinical, radiographic, and anatomical criteria:\n- Stage I (Early): Painless reciprocal clicking, slight disc displacement with reduction, normal bony anatomy.\n- Stage II (Early-Intermediate): Occasional painful click, transient catching/locking, slight disc thickening.\n- Stage III (Intermediate): Acute/subacute closed lock, persistent pain, mouth opening restricted (<30 mm), disc displacement WITHOUT reduction.\n- Stage IV (Intermediate-Late): Chronic closed lock, reduced pain but marked dysfunction, disc remodeling/deformity, early osteophytes/sclerosis.\n- Stage V (Late): Crepitus, severe degenerative joint disease (DJD), disc perforation, eburnation, bony osteophytes.",
+        "surgical_technique": "Arthroscopic intervention is most effective in Wilkes Stages II, III, and IV. Wilkes Stage III (acute/subacute closed lock) is the quintessential indication for arthroscopic lysis and lavage, yielding >90% success if performed within weeks of locking onset.",
+        "danger_zones_pearls": "Timing Pearl: Wilkes Stage I should NEVER undergo surgical arthroscopy; conservative therapy (splint, physiotherapy, NSAIDs) is mandatory. Wilkes Stage V with massive bone remodeling and complete disc destruction may require open arthrotomy, discectomy, or total joint replacement rather than simple arthroscopy.",
+        "key_terms": [
+          "Wilkes Stages I - V",
+          "Closed Lock (<30mm)",
+          "Disc Displacement with/without Reduction",
+          "Conservative Therapy Trial",
+          "Surgical Timing"
+        ],
+        "challenge": {
+          "scenario": "A 24-year-old dental student has had asymptomatic reciprocal clicking in both TMJs for 2 years without pain or restriction of opening (48 mm). An MRI reveals early anterior disc displacement with reduction (Wilkes Stage I).",
+          "question": "What is the appropriate management strategy?",
+          "options": [
+            "Immediate bilateral operative arthroscopic disc plication",
+            "Patient education, reassuring observation, avoidance of extreme yawning/gum chewing, and conservative monitoring (no surgery)",
+            "Open bilateral discectomy and temporal fascial grafting",
+            "Total joint prosthesis"
+          ],
+          "correct_index": 1,
+          "rationale": "Wilkes Stage I (painless click with normal function) has a benign course in the majority of individuals and is a strict contraindication to surgical arthroscopy. Management is non-surgical education and observation."
+        }
+      },
+      {
+        "id": "m05_02",
+        "title": "Indications, Contraindications, & The 3-Month Conservative Rule",
+        "read_time": "3 min",
+        "core_concept": "Standard indications for TMJ arthroscopy: 1) Persistent TMJ pain and dysfunction refractory to 2-3 months of documented conservative therapy (splint, physical therapy, pharmacological management), 2) Acute closed lock (<35 mm) unresponsive to manual reduction manipulation, 3) Diagnostic biopsy of unexplained synovial mass or chronic monarticular arthritis, 4) Degenerative joint disease (osteoarthritis) with intractable pain.",
+        "surgical_technique": "Absolute contraindications: 1) Active local skin or ear canal infection (otitis externa/media), 2) Severe intracranial pathology or vascular malformation, 3) Complete bony ankylosis (requires open gap arthroplasty). Relative contraindications: Significant myofascial pain dysfunction syndrome (MPDS) without true intra-articular pathology, severe coagulopathy.",
+        "danger_zones_pearls": "Surgical Gatekeeper: Always distinguish intracapsular joint pain from extracapsular masticatory myofascial pain. Operating on a patient whose primary problem is masseter/temporalis myospasm will fail to relieve their pain and result in patient dissatisfaction.",
+        "key_terms": [
+          "Conservative Trial (3 months)",
+          "Intracapsular vs Extracapsular Pain",
+          "Bony Ankylosis (Contraindication)",
+          "Local Ear Infection",
+          "Diagnostic Biopsy"
+        ],
+        "challenge": {
+          "scenario": "A 45-year-old male with severe pre-auricular pain and restricted mouth opening is evaluated. On examination, palpation of the masseter and temporalis triggers intense headache, but joint compression and dynamic loading of the condyle into the fossa elicits zero joint tenderness. MRI shows normal disc position and no effusion.",
+          "question": "Why is TMJ arthroscopy NOT indicated in this patient?",
+          "options": [
+            "The patient is too old for arthroscopy",
+            "The primary pathology is extracapsular myofascial pain dysfunction (MPDS), not an intracapsular derangement; arthroscopy will not address muscular triggers",
+            "Arthroscopy is only indicated if the patient has a cardiac pacemaker",
+            "The joint space is too small to enter"
+          ],
+          "correct_index": 1,
+          "rationale": "Arthroscopy addresses intracapsular derangements and synovitis. Patients with primary extracapsular myofascial pain (MPDS) have normal joint mechanics; arthroscopic surgery will not alleviate muscle hyperactivity and is contraindicated."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "Which Wilkes stage is the primary indication for arthroscopic lysis and lavage?",
+        "back": "Wilkes Stage III (acute/subacute closed lock, disc displacement without reduction).",
+        "category": "Clinical Management"
+      },
+      {
+        "front": "Why is Wilkes Stage I generally not treated surgically?",
+        "back": "Because it represents painless, functional disc displacement with reduction that responds well to conservative observation.",
+        "category": "Clinical Management"
+      },
+      {
+        "front": "Name two absolute contraindications to TMJ arthroscopy.",
+        "back": "Active ear/pre-auricular infection and true bony ankylosis.",
+        "category": "Clinical Management"
+      }
+    ]
+  },
+  {
+    "id": "ch06",
+    "number": 6,
+    "title": "Imaging Studies of the TMJ",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Ann E. Podrasky, M.D.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-110-123.pdf",
+    "pages": "102-115",
+    "estimated_minutes": 11,
+    "overview": "Comprehensive diagnostic imaging evaluation by Radiologist Ann E. Podrasky. Covers plain radiographs, computed tomography (CT) for osseous detail, conventional arthrotomography, and magnetic resonance imaging (MRI) protocols (T1, T2, proton density) in open and closed mouth positions to assess disc position, morphology, and joint effusion.",
+    "modules": [
+      {
+        "id": "m06_01",
+        "title": "Magnetic Resonance Imaging (MRI) Protocol: The Gold Standard",
+        "read_time": "4 min",
+        "core_concept": "MRI is the imaging modality of choice for TMJ soft-tissue assessment. Standard sequences include Sagittal and Coronal planes in both maximum intercuspation (closed mouth) and maximal unassisted opening (open mouth). Surface dual-array TMJ coils are required to achieve high signal-to-noise ratio in small 8-10 cm fields of view.",
+        "surgical_technique": "- Proton Density (PD) / T1-Weighted: Best for delineating disc morphology and cortical bony outline. The healthy disc shows low signal intensity (black bowtie) with the posterior band aligned at the 12 o'clock position over the condylar head.\n- T2-Weighted Fast Spin Echo: Essential for detecting joint effusion (hyperintense/bright fluid signal in upper or lower joint compartment), which correlates directly with acute active synovitis and joint pain.",
+        "danger_zones_pearls": "Diagnostic Pearl: In coronal MRI, always check for medial or lateral rotational disc displacement, which is missed on sagittal views alone. Medial displacement occurs in ~80% of rotatory derangements because the lateral pterygoid muscle inserts anteromedially.",
+        "key_terms": [
+          "T1, T2, PD Sequences",
+          "12 O'Clock Position",
+          "Joint Effusion (T2 hyperintensity)",
+          "Sagittal and Coronal Views",
+          "Medial Rotational Displacement"
+        ],
+        "challenge": {
+          "scenario": "You review a TMJ MRI for a patient with persistent joint arthralgia. On the sagittal closed T2-weighted sequence, you notice an intense bright white signal accumulating in the anterior and posterior recesses of the superior joint space.",
+          "question": "What is the clinical significance of this bright signal on T2 MRI?",
+          "options": [
+            "It represents extensive bone necrosis of the condyle",
+            "It indicates joint effusion, strongly correlating with active synovial inflammation, elevated inflammatory cytokines, and acute joint pain",
+            "It proves that the disc is permanently torn in half",
+            "It is an artifact caused by dental amalgam and has no meaning"
+          ],
+          "correct_index": 1,
+          "rationale": "Hyperintense (bright) signal on T2-weighted MRI indicates joint effusion (excess synovial fluid accumulation), which has a strong clinical correlation with active synovitis, high cytokine levels, and TMJ arthralgia."
+        }
+      },
+      {
+        "id": "m06_02",
+        "title": "CT vs MRI: Osseous Architecture & Arthrotomography",
+        "read_time": "3 min",
+        "core_concept": "Computed Tomography (CT) or Cone Beam CT (CBCT) is superior for evaluating hard tissue: condylar hypoplasia/hyperplasia, osteophyte formation, subchondral cyst formation (Ely's cysts), eburnation, condylar flattening, and bony ankylosis. Arthrography (radiopaque contrast injection) historically showed perforations and real-time fluoroscopic dynamics but has been largely replaced by dynamic fast MRI.",
+        "surgical_technique": "When planning arthroscopy in a patient with suspected osteoarthritis (Wilkes IV or V), obtaining a CT provides the 3D map of the articular eminence inclination and condylar osteophytes, preventing instrument breakage against bony spurs.",
+        "danger_zones_pearls": "Radiology Pearl: If an MRI shows marked disc displacement but the patient has zero osseous remodeling on CT, the derangement is typically acute/subacute. If CT reveals severe osteophyte 'beaking' and condylar flattening, the disease process is advanced chronic degenerative joint disease.",
+        "key_terms": [
+          "CT / CBCT",
+          "Ely's Cysts",
+          "Osteophyte Beaking",
+          "Condylar Flattening",
+          "Dynamic Fluoroscopy vs MRI"
+        ],
+        "challenge": {
+          "scenario": "A 52-year-old female presents with loud grinding crepitus and jaw deviation on opening. You suspect advanced osteoarthritis (Wilkes Stage V).",
+          "question": "Which imaging modality is superior for evaluating fine osseous details such as cortical erosion, subchondral sclerosis, and marginal osteophytes?",
+          "options": [
+            "Panoramic radiograph (OPG)",
+            "High-resolution Computed Tomography (CT / CBCT)",
+            "Lateral cephalogram",
+            "Ultrasound of the parotid gland"
+          ],
+          "correct_index": 1,
+          "rationale": "High-resolution CT or CBCT provides submillimeter isotropic visualization of bone architecture, cortical continuity, osteophyte beaking, and subchondral bone sclerosis, far surpassing 2D radiographs or standard MRI for osseous pathology."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What does a high-intensity signal on T2-weighted TMJ MRI indicate?",
+        "back": "Joint effusion, which correlates strongly with active synovitis and joint pain.",
+        "category": "Imaging"
+      },
+      {
+        "front": "Where should the posterior band of the normal disc be positioned on closed sagittal MRI?",
+        "back": "At the 12 o'clock position (superior-most aspect) above the condylar head.",
+        "category": "Imaging"
+      },
+      {
+        "front": "What is the primary advantage of CT over MRI in TMJ evaluation?",
+        "back": "Submillimeter visualization of osseous changes: osteophytes, erosions, sclerosis, and ankylosis.",
+        "category": "Imaging"
+      }
+    ]
+  },
+  {
+    "id": "ch07",
+    "number": 7,
+    "title": "Operating Room Environment & Ergonomics",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Joseph P. McCain, D.D.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-124-132.pdf",
+    "pages": "116-124",
+    "estimated_minutes": 9,
+    "overview": "Operating room setup, sterile draping, patient positioning, eye and auditory canal protection, equipment tower alignment, fluid management systems, and team ergonomics essential to smooth arthroscopic procedures.",
+    "modules": [
+      {
+        "id": "m07_01",
+        "title": "Patient Positioning, Draping, & Auditory Canal Protection",
+        "read_time": "3 min",
+        "core_concept": "The patient is positioned supine with a 15-30° head-up tilt to reduce venous pooling and decrease capillary bleeding in the preauricular region. The head is turned 45° to the contralateral side. The external auditory canal (EAC) MUST be carefully packed with sterile cotton impregnated with antibiotic/petrolatum ointment to prevent irrigation fluid from collecting against the tympanic membrane.",
+        "surgical_technique": "Sterile eye protection is placed on the ipsilateral eye, ensuring no pressure on the globe while maintaining clear visualization of the lateral canthus and upper face. A transparent adhesive surgical drape is applied, leaving the tragus, canthus, and angle of the mandible accessible for intraoperative manipulation.",
+        "danger_zones_pearls": "Ear Safety Pearl: If the EAC is left unprotected, irrigation fluid mixed with prep solution can pools in the ear canal, causing maceration, otitis externa, or temporary conductive hearing loss. Always verify EAC pack placement and perform otoscopic inspection if EAC perforation is suspected.",
+        "key_terms": [
+          "15-30° Reverse Trendelenburg",
+          "EAC Cotton Pack",
+          "Eye Protection",
+          "Transparent Drape",
+          "Contralateral Head Turn"
+        ],
+        "challenge": {
+          "scenario": "Before scrubbing for a left TMJ arthroscopic procedure, you inspect the patient's surgical preparation in the operating room.",
+          "question": "What critical protective step must be performed in the external auditory canal prior to skin prep and draping?",
+          "options": [
+            "Irrigate the ear canal with 50 mL of hydrogen peroxide",
+            "Pack the external auditory meatus with sterile antibiotic-impregnated cotton or petrolatum gauze",
+            "Perform an immediate myringotomy",
+            "Insert a high-vacuum metal suction cannula into the eardrum"
+          ],
+          "correct_index": 1,
+          "rationale": "Packing the external auditory canal with sterile antibiotic or petrolatum gauze protects the tympanic membrane from accumulating pooled skin prep solution and extravasated irrigation fluid, preventing chemical otitis and EAC maceration."
+        }
+      },
+      {
+        "id": "m07_02",
+        "title": "Ergonomics, Video Tower Line of Sight, & Fluid Management",
+        "read_time": "3 min",
+        "core_concept": "Surgeon fatigue and hand tremor are minimized when the primary high-definition video monitor is placed directly across the operating table, in direct line of sight with the surgeon's natural forward head position. The surgeon stands at the head or ipsilateral side of the patient with elbows supported at 90°.",
+        "surgical_technique": "Irrigation fluid bags (Lactated Ringer's) are suspended 70-100 cm above the joint for gravity feed, or regulated through an automated arthroscopy pump. Continuous collection drains must be positioned below the preauricular draping to quantify fluid input versus output, enabling early detection of soft-tissue extravasation.",
+        "danger_zones_pearls": "Ergonomic Pearl: Never turn your head more than 20° to view the screen during fine trocar movements. Misalignment between hand motion and visual feedback leads to disorientation and inadvertent cartilage gouging.",
+        "key_terms": [
+          "Line of Sight Alignment",
+          "Elbow Support",
+          "Input/Output Fluid Balance",
+          "Gravity Head (70-100 cm)",
+          "Monitor Positioning"
+        ],
+        "challenge": {
+          "scenario": "During an operative arthroscopy, the surgeon notes difficulty coordinating instrument movement with the video screen, experiencing neck strain and hand fatigue.",
+          "question": "How should the video monitor be positioned to achieve optimal surgical ergonomics and visual-motor coordination?",
+          "options": [
+            "Directly behind the surgeon's back",
+            "Directly opposite the surgeon in line of sight, at eye level, allowing the surgeon to look straight ahead while operating",
+            "On the floor next to the anesthesia machine",
+            "Above the ceiling light facing the assistant"
+          ],
+          "correct_index": 1,
+          "rationale": "Positioning the video monitor directly in the surgeon's natural line of sight at eye level prevents cervical strain and ensures intuitive hand-eye co-axial orientation for delicate micro-triangulation."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "Why is the external auditory canal packed prior to TMJ arthroscopy?",
+        "back": "To prevent accumulation of skin prep solution and irrigation fluid, preventing chemical otitis and canal maceration.",
+        "category": "OR Environment"
+      },
+      {
+        "front": "What patient position helps reduce venous bleeding during TMJ puncture?",
+        "back": "15-30° head-up tilt (Reverse Trendelenburg).",
+        "category": "OR Environment"
+      },
+      {
+        "front": "Where should the video monitor be positioned for optimal ergonomics?",
+        "back": "Directly opposite the surgeon in the direct line of sight at eye level.",
+        "category": "OR Environment"
+      }
+    ]
+  },
+  {
+    "id": "ch08",
+    "number": 8,
+    "title": "Anesthesia Considerations in TMJ Arthroscopy",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Martin F. McCarthy, M.D.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-133-135.pdf",
+    "pages": "125-127",
+    "estimated_minutes": 8,
+    "overview": "Airway and anesthetic management by Anesthesiologist Martin F. McCarthy. Focuses on nasotracheal intubation to permit free mandibular excursion, avoidance of long-acting muscle relaxants when facial nerve integrity is monitored, hypotensive technique to control capillary ooze, and local blocks.",
+    "modules": [
+      {
+        "id": "m08_01",
+        "title": "Nasotracheal Intubation & Free Mandibular Excursion",
+        "read_time": "3 min",
+        "core_concept": "General anesthesia with Nasotracheal Intubation is the definitive airway method for surgical TMJ arthroscopy. Orotracheal intubation is strictly avoided because the oral tube blocks mandibular manipulation, prevents placement of bite blocks, and impedes the surgeon from testing dynamic condylar translation and joint distraction during the procedure.",
+        "surgical_technique": "The nasal tube is secured securely across the forehead away from the surgical field. A throat pack is placed if intraoral manipulations are anticipated. The surgeon must be able to freely grasp the mandible, translate the condyle anteriorly, and pull the condylar head downward to open the superior joint compartment for trocar entry.",
+        "danger_zones_pearls": "Airway Pearl: If extensive fluid extravasation into the pharyngeal or parapharyngeal spaces occurs during long operative cases, extubation must NOT be rushed. Always perform direct laryngoscopy or a leak test prior to extubation to rule out supraglottic or retroglottic edema.",
+        "key_terms": [
+          "Nasotracheal Intubation",
+          "Free Mandibular Translation",
+          "Avoidance of Orotracheal Tube",
+          "Post-Op Airway Assessment",
+          "Extravasation Risk"
+        ],
+        "challenge": {
+          "scenario": "The anesthesia resident suggests placing an oral endotracheal tube for a planned 2-hour bilateral operative TMJ arthroscopy.",
+          "question": "Why must the surgeon insist on nasotracheal rather than oral endotracheal intubation?",
+          "options": [
+            "Nasal tubes are cheaper than oral tubes",
+            "Oral tubes prevent free mandibular mobilization, condylar distraction, and intraoperative assessment of range of motion and occlusion",
+            "Oral tubes increase intraocular pressure",
+            "Nasal tubes eliminate all risk of throat infection"
+          ],
+          "correct_index": 1,
+          "rationale": "TMJ arthroscopy requires continuous manual manipulation of the mandible to distract the condyle, open the joint compartments, and evaluate dynamic disc movement. An oral endotracheal tube restricts jaw mobility and interferes with intraoral surgical access."
+        }
+      },
+      {
+        "id": "m08_02",
+        "title": "Muscle Relaxation, Facial Nerve Monitoring, & Local Blocks",
+        "read_time": "3 min",
+        "core_concept": "Short-acting neuromuscular blocking agents are utilized for intubation, but maintenance of profound muscle paralysis during surgery is controversial. Light relaxation allows spontaneous twitches if a trocar approaches the facial nerve trunk or its branches. Local infiltration of 2% lidocaine with 1:100,000 epinephrine into the preauricular skin and joint capsule provides dual benefit: pre-emptive analgesia and profound local vasoconstriction.",
+        "surgical_technique": "Auriculotemporal nerve block is placed at the neck of the condyle. Hemostasis in the subcutaneous tissue prevents blood from trickling along the trocar sheath into the joint, which would immediately obscure endoscopic visualization ('red-out').",
+        "danger_zones_pearls": "Pharmacology Pearl: Avoid injecting large boluses of local anesthetic deep into the capsule before establishing bony landmarks, as ballooning the peri-capsular tissue distorts surface topography and can temporarily paralyze the temporal branch of CN VII prior to incision.",
+        "key_terms": [
+          "Facial Nerve Monitoring",
+          "Neuromuscular Blockade",
+          "2% Lidocaine with 1:100,000 Epi",
+          "Auriculotemporal Block",
+          "Red-Out Prevention"
+        ],
+        "challenge": {
+          "scenario": "During preauricular infiltration before TMJ arthroscopy, the surgeon injects 1.5 mL of 2% lidocaine with 1:100,000 epinephrine into the subcutaneous tissues overlying the zygomatic arch and tragus.",
+          "question": "What is the primary technical objective of this epinephrine-containing local infiltration?",
+          "options": [
+            "To chemically dissolve fibrous adhesions inside the joint",
+            "To induce local vasoconstriction, preventing blood from trickling down the cannula and causing an endoscopic 'red-out'",
+            "To permanently ablate the auriculotemporal nerve",
+            "To replace the need for sterile skin prep"
+          ],
+          "correct_index": 1,
+          "rationale": "Even minute amounts of blood entering the miniature upper joint space through the puncture tract can immediately cloud the irrigating fluid and ruin endoscopic visualization ('red-out'). Local epinephrine produces necessary capillary vasoconstriction."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "Why is nasotracheal intubation mandatory in TMJ arthroscopy?",
+        "back": "To allow unrestricted manual mobilization, distraction, and dynamic evaluation of the mandible.",
+        "category": "Anesthesia"
+      },
+      {
+        "front": "What is the danger of deep bolus local anesthetic infiltration over the TMJ?",
+        "back": "It distorts surface landmarks and may cause pre-incision neuropraxia of the facial nerve temporal branch.",
+        "category": "Anesthesia"
+      },
+      {
+        "front": "What serious airway complication must be ruled out before extubation after complex arthroscopy?",
+        "back": "Pharyngeal or parapharyngeal fluid extravasation causing supraglottic airway compromise.",
+        "category": "Anesthesia"
+      }
+    ]
+  },
+  {
+    "id": "ch09",
+    "number": 9,
+    "title": "Puncture Techniques & Arthroscopic Anatomy",
+    "part": "Part I: Background and Fundamentals",
+    "author": "Joseph P. McCain, D.D.S., Michael A. Menis, D.D.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-136-173.pdf",
+    "pages": "128-165",
+    "estimated_minutes": 18,
+    "overview": "The definitive clinical core of the book: step-by-step puncture technique for the superior joint space, hydraulic joint distension, the tactile sensation of walking on bone, outflow portal establishment, and the systematic sweeping diagnostic examination of all four joint compartments.",
+    "modules": [
+      {
+        "id": "m09_01",
+        "title": "Joint Insufflation & Hydraulic Distension (The 'Condylar Bounce')",
+        "read_time": "4 min",
+        "core_concept": "Blind puncture into an undistended TMJ carries high risk of articular cartilage damage or middle cranial fossa perforation. Prior to trocar insertion, the upper joint space MUST be insufflated with 2.0 to 4.0 mL of Lactated Ringer's solution using a 21-gauge needle inserted at the posterolateral site.",
+        "surgical_technique": "1) Palpate the glenoid fossa while an assistant distracts and translates the mandible forward.\n2) Insert a 21-gauge needle 10 mm anterior, 2 mm inferior to the tragus, angled 45° anteriorly and 10° superiorly until contacting the glenoid fossa roof.\n3) Inject 2-3 mL fluid: Feel the definitive resistance and observe the 'condylar bounce' (the mandible physically depresses and springs back under hydrostatic pressure).\n4) Release syringe plunger: Fluid should push back into the syringe barrel under positive pressure, confirming true intra-articular placement.",
+        "danger_zones_pearls": "Safety Pearl: If fluid flows freely with zero resistance and no condylar bounce is felt, the needle is in the extra-articular preauricular tissues or infratemporal fossa. NEVER advance a large arthroscopy trocar until positive joint distension and backflow are verified.",
+        "key_terms": [
+          "Hydraulic Insufflation",
+          "Condylar Bounce",
+          "Backflow Verification",
+          "21-Gauge Needle",
+          "Positive Pressure"
+        ],
+        "challenge": {
+          "scenario": "You insert a 21-gauge needle at the posterolateral portal and attempt to distend the joint with 3 mL of Lactated Ringer's. The plunger pushes effortlessly, no resistance is met, no mandibular movement occurs, and releasing the plunger produces zero backflow.",
+          "question": "What is the correct interpretation and immediate action?",
+          "options": [
+            "The needle is in the middle cranial fossa; proceed immediately with the 2.7 mm sharp trocar",
+            "The needle tip is outside the capsule in the peri-articular soft tissues; reposition the needle against bone until resistance and backflow are confirmed",
+            "The joint space is exceptionally large; inject 50 mL more fluid",
+            "The patient has complete absence of the mandibular condyle"
+          ],
+          "correct_index": 1,
+          "rationale": "Free fluid flow without resistance or backflow indicates that the needle is outside the capsule in the soft tissues. Advancing a trocar under these conditions will result in severe extra-articular fluid extravasation."
+        }
+      },
+      {
+        "id": "m09_02",
+        "title": "Trocar Insertion: Angle, Trajectory, & Bone Tactile Walking",
+        "read_time": "4 min",
+        "core_concept": "With the joint distended, a 2-3 mm stab incision is made through the skin only. The cannula with sharp trocar pierces skin and parotid fascia, then the sharp trocar is IMMEDIATELY replaced with the blunt or bullet-tip obturator. The trajectory is oriented 45° anteriorly and 10° superiorly, aiming directly for the posterior slope of the articular eminence.",
+        "surgical_technique": "The obturator must contact the cortical bone of the articular eminence ('bone stop'). Once solid bone is felt, the cannula is gently 'walked' along the posterior slope into the superior joint space while maintaining forward and upward pressure. A distinct 'pop' or sudden loss of resistance signifies capsular penetration into the upper joint space.",
+        "danger_zones_pearls": "Danger Zone: NEVER direct the trocar posteriorly (toward the external auditory canal and tympanic plate) or superiorly/perpendicularly into the thin roof of the glenoid fossa. Always direct the instrument ANTERIORLY toward the thick, dense bone of the articular eminence.",
+        "key_terms": [
+          "Skin Stab Incision",
+          "Blunt Obturator Walk",
+          "Bone Stop on Articular Eminence",
+          "45° Anterior / 10° Superior Trajectory",
+          "Avoid Perpendicular Force"
+        ],
+        "challenge": {
+          "scenario": "A surgical resident is inserting the arthroscope cannula through the posterolateral portal. They hold the trocar perpendicular (90°) to the skin and push forcefully upwards.",
+          "question": "What catastrophic complication is the resident risking with this perpendicular trajectory?",
+          "options": [
+            "Fracture of the hyoid bone",
+            "Perforation through the paper-thin roof of the glenoid fossa into the Middle Cranial Fossa",
+            "Transection of the inferior alveolar nerve in the neck",
+            "Dislocation of the contralateral shoulder"
+          ],
+          "correct_index": 1,
+          "rationale": "The roof of the glenoid fossa can be less than 1 mm thick. Directing a trocar perpendicularly or superiorly risks penetrating the bone into the middle cranial fossa. The trocar must be directed anteriorly toward the thick articular eminence."
+        }
+      },
+      {
+        "id": "m09_03",
+        "title": "Establishing Outflow & The Systematic 4-Quadrant Diagnostic Sweep",
+        "read_time": "4 min",
+        "core_concept": "Once the scope is in the posterior pouch, continuous fluid clearance requires an outflow portal. A 18-gauge or 20-gauge needle is inserted 20 mm anterior, 8 mm inferior into the anterior pouch or under direct visual triangulation. Clear fluid jet confirms continuous circuit flow. The surgeon then executes a systematic diagnostic sweep.",
+        "surgical_technique": "Systematic 4-Quadrant Sweep:\n1) Posterior Pouch: Inspect retrodiscal pad, bilaminar zone, posterior plicae, vascularity.\n2) Glenoid Fossa & Intermediate Zone: Inspect temporal fibrocartilage roof, disc posterior band, intermediate zone smoothness.\n3) Articular Eminence: Sweep across the convex eminence crest from medial to lateral.\n4) Anterior Pouch: Inspect anterior recess synovium, anterior disc attachment, and pterygoid shadow.",
+        "danger_zones_pearls": "Diagnostic Pearl: Always perform the entire diagnostic sweep BEFORE inserting operative cutting instruments or performing lysis. Inspecting first provides an unaltered baseline of synovitis, adhesions, and chondromalacia before iatrogenic instrument marks occur.",
+        "key_terms": [
+          "Outflow Portal",
+          "Continuous Fluid Circuit",
+          "4-Quadrant Sweep",
+          "Posterior Pouch",
+          "Intermediate Zone",
+          "Pterygoid Shadow"
+        ],
+        "challenge": {
+          "scenario": "During TMJ arthroscopy, after placing the cannula in the posterior pouch, irrigation fluid is running but visibility is hazy due to minor blood cells. No outflow path has been established.",
+          "question": "What is the essential next maneuver to achieve pristine optical clarity?",
+          "options": [
+            "Turn off the video camera",
+            "Insert an outflow needle into the anterior recess to establish a continuous laminar flow circuit that washes out debris and blood",
+            "Inject 10 mL of air into the joint",
+            "Remove the cannula and close the wound"
+          ],
+          "correct_index": 1,
+          "rationale": "A continuous irrigation circuit (inflow through the sheath, outflow through an anterior needle) rapidly clears suspended erythrocytes, debris, and bubbles, providing optical clarity."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What is the 'condylar bounce' test during TMJ puncture?",
+        "back": "Injecting 2-4 mL of fluid into the joint causes the condyle to depress and spring back, confirming true intra-articular position.",
+        "category": "Surgical Technique"
+      },
+      {
+        "front": "What bony structure must the trocar contact as a safe 'bone stop'?",
+        "back": "The thick posterior slope of the articular eminence (never the thin glenoid fossa roof).",
+        "category": "Surgical Technique"
+      },
+      {
+        "front": "What are the four zones evaluated in a systematic diagnostic sweep?",
+        "back": "Posterior pouch, glenoid fossa / intermediate zone, articular eminence crest, and anterior pouch.",
+        "category": "Surgical Technique"
+      }
+    ]
+  },
+  {
+    "id": "ch10",
+    "number": 10,
+    "title": "Synovial Pathology & Staging of Synovitis",
+    "part": "Part II: Management of Intra-Articular Pathology",
+    "author": "Joseph P. McCain, D.D.S., James H. Quinn, D.D.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-174-200.pdf",
+    "pages": "169-194",
+    "estimated_minutes": 13,
+    "overview": "McCain and Quinn's definitive classification of synovial pathology in the TMJ: vascular injection patterns, acute vs chronic synovitis grading (Grades I, II, III), villous hyperplasia, cobblestone appearance, and intra-articular fibrous adhesion types (curtains, bands, pseudowalls).",
+    "modules": [
+      {
+        "id": "m10_01",
+        "title": "Arthroscopic Staging of Synovitis: Grades I, II, & III",
+        "read_time": "4 min",
+        "core_concept": "McCain & Quinn classified TMJ synovitis into three distinct arthroscopic grades:\n- Grade I (Mild / Early): Dilated, tortuous capillary loops visible against pale pink background; no loss of synovial architectural smoothness.\n- Grade II (Moderate): Intense hyperemic capillary injection, thickened edematous synovial lining, 'cobblestone' appearance, patchy vascular clusters.\n- Grade III (Severe / Advanced): Profuse hypervascularity, dense hyperemic villous fronds and hyperplastic polypoid projections extending into the joint lumen, fibrin exudates, and petechial hemorrhages.",
+        "surgical_technique": "Synovitis is most pronounced in the posterior pouch (retrodiscal tissue) and anterior recess. Lavage with 200-300 mL of Lactated Ringer's washes out degradative enzymes. In Grade III synovitis, targeted bipolar radiofrequency or micro-shaver debridement of redundant hyperplastic villi relieves impingement.",
+        "danger_zones_pearls": "Pathology Pearl: Synovitis is the primary driver of joint pain. Even severe disc displacement is painless if the synovium is quiescent. Conversely, a minimally displaced disc with Grade III acute synovitis produces agonizing arthralgia.",
+        "key_terms": [
+          "McCain-Quinn Synovitis Staging",
+          "Grade I Capillary Dilation",
+          "Grade II Cobblestone",
+          "Grade III Villous Hypertrophy",
+          "Retrodiscal Synovial Infiltration"
+        ],
+        "challenge": {
+          "scenario": "During diagnostic arthroscopy of the posterior pouch, you observe dense, bright red, hyperplastic villous projections waving in the irrigation stream, accompanied by fibrin flakes and cobblestone mucosal thickening.",
+          "question": "According to McCain and Quinn, what stage of synovitis does this represent?",
+          "options": [
+            "Grade 0 (Normal synovium)",
+            "Grade I (Mild capillary dilation)",
+            "Grade III (Severe villous hypertrophy and hypervascularity)",
+            "Bony osteosarcoma"
+          ],
+          "correct_index": 2,
+          "rationale": "Grade III synovitis is characterized by severe hypervascularity, hyperplastic villous fronds, edematous polypoid projections, and fibrin deposition in the joint space."
+        }
+      },
+      {
+        "id": "m10_02",
+        "title": "Fibrous Adhesions: Morphology, Types, & Lysis",
+        "read_time": "3 min",
+        "core_concept": "Intra-articular adhesions form as a sequel to chronic synovitis, trauma, or immobilization. Adhesions bind the disc to the temporal bone (most commonly in the anterior pouch or lateral recess), preventing translation and causing closed lock. McCain classifies adhesions into: 1) Type I: Fine filmy/curtain-like bridging adhesions, 2) Type II: Dense fibrous cords and bands, and 3) Type III: Obliterative fibrous pseudowalls.",
+        "surgical_technique": "Type I filmy adhesions lyse easily with hydrostatic distension alone. Type II fibrous bands require blunt sweep mobilization with a hook probe or sharp division using micro-scissors, coblation, or Holmium:YAG laser. Type III obliterative adhesions require aggressive motorized shaver debridement to recreate the joint space.",
+        "danger_zones_pearls": "Technical Pearl: When releasing adhesions between the disc and the articular eminence, stay immediately adjacent to the bone of the eminence. Avoid cutting downward into the substance of the disc itself, which would cause an iatrogenic disc perforation.",
+        "key_terms": [
+          "Adhesion Classification (Type I, II, III)",
+          "Filmy vs Dense Bands",
+          "Pseudowall Obliteration",
+          "Hydrostatic Lysis",
+          "Iatrogenic Perforation Risk"
+        ],
+        "challenge": {
+          "scenario": "You are treating a patient with chronic closed lock. Arthroscopy reveals dense, thick fibrous bands tethering the anterior band of the disc to the articular eminence roof, completely blocking forward condylar translation.",
+          "question": "What is the safest plane of dissection when lysing these dense fibrous adhesions?",
+          "options": [
+            "Dissect directly into the condylar neck bone marrow",
+            "Hug the temporal bony surface of the eminence, freeing the disc downward while preserving the integrity of the disc body",
+            "Cut across the middle of the disc to remove it completely",
+            "Inject high concentrations of hydrochloric acid into the joint"
+          ],
+          "correct_index": 1,
+          "rationale": "When dividing intra-articular adhesions, the instrument should hug the temporal bony surface, sweeping the adhesions free from the eminence to avoid lacerating or perforating the disc."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What distinguishes Grade II from Grade III synovitis in McCain's classification?",
+        "back": "Grade II has cobblestone mucosal edema; Grade III develops dramatic hyperplastic villous fronds and fibrin exudate.",
+        "category": "Pathology"
+      },
+      {
+        "front": "What are the three morphological types of TMJ fibrous adhesions?",
+        "back": "Type I (filmy/curtain), Type II (dense fibrous bands), and Type III (dense obliterative pseudowall).",
+        "category": "Pathology"
+      },
+      {
+        "front": "What is the primary source of pain in internal derangements?",
+        "back": "Active synovial inflammation and compression of the retrodiscal tissue, not the avascular disc itself.",
+        "category": "Pathology"
+      }
+    ]
+  },
+  {
+    "id": "ch11",
+    "number": 11,
+    "title": "Articular Dysfunction: Internal Derangement & Disc Repositioning",
+    "part": "Part II: Management of Intra-Articular Pathology",
+    "author": "Joseph P. McCain, D.D.S., Neal A. Zabiegalski, D.D.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-201-225.pdf",
+    "pages": "195-219",
+    "estimated_minutes": 16,
+    "overview": "Operative techniques for internal derangements: Disc mobilization, anterior release of the contracted superior lateral pterygoid attachment, and the McCain arthroscopic disc plication / suture stabilization technique to secure an anteriorly displaced disc back into anatomic position.",
+    "modules": [
+      {
+        "id": "m11_01",
+        "title": "Disc Mobilization & Anterior Release of the Lateral Pterygoid",
+        "read_time": "4 min",
+        "core_concept": "In chronic anterior disc displacement, the disc becomes tethered anteriorly by contracture and fibrosis of the superior head of the lateral pterygoid muscle and anterior capsule. Before an anteriorly displaced disc can be repositioned posteriorly, this anterior tether MUST be released.",
+        "surgical_technique": "Under triangulation from the anterior portal, a blunt probe, needle knife, or radiofrequency probe is placed into the anterior recess. The anterior synovial attachment and contracted superior lateral pterygoid tendon fibers are released along the anterior margin of the disc until the disc freely slides posteriorly upon manual condylar retrusion.",
+        "danger_zones_pearls": "Danger Zone: Anterior release must be confined strictly to the anteromedial joint capsule. Going too deep or anteriorly into the infratemporal fossa risks lacerating the maxillary artery or pterygoid venous plexus, causing severe hemorrhage.",
+        "key_terms": [
+          "Disc Mobilization",
+          "Anterior Release",
+          "Superior Lateral Pterygoid",
+          "Anteromedial Capsule",
+          "Maxillary Artery Danger"
+        ],
+        "challenge": {
+          "scenario": "You have lysed all posterior and superior adhesions, but upon condylar distraction and posterior disc traction, the disc refuses to slide backward over the condylar head.",
+          "question": "What pathological tethering structure is preventing posterior repositioning of the disc?",
+          "options": [
+            "Calcification of the ear canal",
+            "Contracture and fibrosis of the anterior capsule and superior head of the lateral pterygoid muscle, requiring an anterior release",
+            "Hypertrophy of the masseter muscle",
+            "Excess length of the stylohyoid ligament"
+          ],
+          "correct_index": 1,
+          "rationale": "Anterior disc entrapment is maintained by anterior capsular contracture and fibrotic shortening of the superior lateral pterygoid muscle attachment; an anterior release is essential to restore posterior mobility."
+        }
+      },
+      {
+        "id": "m11_02",
+        "title": "McCain Suture Plication Technique for Disc Repositioning",
+        "read_time": "4 min",
+        "core_concept": "McCain developed an arthroscopic suturing technique to mechanically anchor the mobilized disc posteriorly to the retrodiscal capsule and tragal periosteum, replicating open plication (Mitek anchor / Walker plication) with minimal surgical morbidity.",
+        "surgical_technique": "1) A 2-0 or 3-0 non-resorbable or slowly resorbable suture (e.g. Ethibond or PDS) is passed on a Keith needle or specialized suture-passing cannula through the posterolateral portal.\n2) The needle traverses the posterior band of the disc from inferior to superior under direct endoscopic visualization.\n3) The suture is brought out through the preauricular skin, anchored into the deep tragal periosteum/fascia, and tied, pulling the disc posteriorly onto the condylar dome.\n4) Post-operative passive opening is initiated immediately with a splint in place.",
+        "danger_zones_pearls": "Suture Pearl: Always visualize the exit of the needle through the disc substance before tying. If the suture catches only synovial fronds rather than the dense collagenous posterior band, the suture will cheese-wire through the tissue, resulting in early plication failure.",
+        "key_terms": [
+          "McCain Suture Plication",
+          "Keith Needle",
+          "Tragal Periosteum Anchoring",
+          "2-0 Ethibond / PDS",
+          "Cheese-Wiring Prevention"
+        ],
+        "challenge": {
+          "scenario": "During an arthroscopic disc plication, you pass a suture needle into the joint to capture the posterior band of the displaced disc.",
+          "question": "Why is it mandatory that the suture incorporates the dense collagenous posterior band of the disc rather than the retrodiscal synovium alone?",
+          "options": [
+            "Retrodiscal synovium is composed of bone and will bend the needle",
+            "Synovial and retrodiscal tissues are delicate and vascular; a suture placed in them alone will cheese-wire through, failing to secure the disc and causing hematoma",
+            "The posterior band contains motor nerves",
+            "The FDA requires all sutures to touch fibrocartilage"
+          ],
+          "correct_index": 1,
+          "rationale": "Only the dense collagenous fibrocartilage of the posterior band has sufficient tensile strength to hold anchoring sutures. Suturing only fragile vascular retrodiscal tissue leads to immediate pull-out (cheese-wiring) and plication failure."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What structure must be released anteriorly if an anteriorly displaced disc cannot be retracted posteriorly?",
+        "back": "The contracted anterior capsule and superior head of the lateral pterygoid muscle.",
+        "category": "Operative Technique"
+      },
+      {
+        "front": "What suture material and size is typically used in the McCain disc plication technique?",
+        "back": "2-0 or 3-0 non-resorbable (Ethibond) or long-acting resorbable (PDS).",
+        "category": "Operative Technique"
+      },
+      {
+        "front": "To what anatomical structure is the plication suture secured externally?",
+        "back": "The deep cartilaginous/fascial tragal periosteum.",
+        "category": "Operative Technique"
+      }
+    ]
+  },
+  {
+    "id": "ch12",
+    "number": 12,
+    "title": "Osteoarthritis & Degenerative Joint Disease",
+    "part": "Part II: Management of Intra-Articular Pathology",
+    "author": "Joseph P. McCain, D.D.S., James H. Quinn, D.D.S., Neal A. Zabiegalski, D.D.S., Marcos Diaz, D.D.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-226-246.pdf",
+    "pages": "220-245",
+    "estimated_minutes": 14,
+    "overview": "Arthroscopic management of osteoarthrosis and degenerative joint disease (DJD): Chondromalacia grading (Grades I to IV), fibrillations, subchondral eburnation, disc perforations, and techniques of debridement, chondroplasty, and copious biochemical lavage.",
+    "modules": [
+      {
+        "id": "m12_01",
+        "title": "Chondromalacia Staging & Disc Perforations in Osteoarthritis",
+        "read_time": "4 min",
+        "core_concept": "Degenerative changes in TMJ fibrocartilage follow a distinct progression (Outerbridge / McCain chondromalacia scale):\n- Grade I: Softening, swelling, and loss of glistening sheen.\n- Grade II: Superficial fibrillation, blistering, and velvet-like fissuring of the articular surface.\n- Grade III: Deep fissuring down to subchondral bone, 'crabmeat' fronds of cartilage floating in the joint space.\n- Grade IV: Complete loss of fibrocartilage with exposed bare eburnated subchondral bone ('ivory bone') and peripheral osteophytes.\nDisc perforations occur predominantly in the posterior attachment or lateral junction between the posterior band and bilaminar zone.",
+        "surgical_technique": "When a disc perforation is encountered, the condylar head is directly visible through the defect in the upper joint space. The edges of the perforation are typically ragged, hyperemic, and surrounded by exposed bone on both the eminence and condyle.",
+        "danger_zones_pearls": "Pathology Pearl: A disc perforation does NOT automatically require open total joint replacement or discectomy. Arthroscopic debridement of ragged perforation edges, motorized chondroplasty, and intensive lavage eliminates bone-on-bone friction and chemical cytokines, achieving long-term pain relief in >80% of Wilkes V patients.",
+        "key_terms": [
+          "Chondromalacia Grades I - IV",
+          "Crabmeat Fissuring",
+          "Eburnation (Ivory Bone)",
+          "Disc Perforation",
+          "Bilateral Compartment Communication"
+        ],
+        "challenge": {
+          "scenario": "During diagnostic arthroscopy of the superior joint space in a 58-year-old with severe crepitus, you observe bare, polished, ivory-like white bone on the temporal eminence with complete absence of cartilage covering.",
+          "question": "What grade of chondromalacia does this severe finding represent?",
+          "options": [
+            "Grade I (Superficial softening)",
+            "Grade II (Superficial fibrillation)",
+            "Grade III (Partial thickness fissuring)",
+            "Grade IV (Full thickness cartilage loss with exposed eburnated bone)"
+          ],
+          "correct_index": 3,
+          "rationale": "Grade IV chondromalacia is characterized by complete full-thickness ulceration of the articular fibrocartilage, exposing polished, eburnated subchondral bone."
+        }
+      },
+      {
+        "id": "m12_02",
+        "title": "Chondroplasty, Motorized Shaver Debridement, & Cytokine Clearance",
+        "read_time": "3 min",
+        "core_concept": "The primary goals of arthroscopy in TMJ osteoarthritis are: 1) Mechanical: Smoothing rough articular surfaces (chondroplasty) with motorized round burrs or whisker shavers, removing detached cartilaginous loose bodies, and trimming ragged perforation edges; 2) Biochemical: Lavaging out high concentrations of interleukin-1 (IL-1), tumor necrosis factor-alpha (TNF-a), and matrix metalloproteinases (MMPs) that degrade proteoglycans.",
+        "surgical_technique": "Motorized shavers are operated at low RPM (500-1000 RPM in oscillation mode) with light pressure to contour irregularities without penetrating the subchondral bone cortex. High-volume lavage (500-1000 mL) is delivered.",
+        "danger_zones_pearls": "Burr Safety Pearl: Never use high-speed aggressive burrs on the roof of the glenoid fossa. The bone there is paper thin; inadvertent perforation can plunge the burr into the middle cranial fossa. Confine osseous smoothing to the anterior slope of the articular eminence and condyle.",
+        "key_terms": [
+          "Chondroplasty",
+          "500-1000 RPM Oscillation",
+          "IL-1, TNF-alpha, MMPs",
+          "Cartilaginous Loose Bodies",
+          "Glenoid Roof Thinness"
+        ],
+        "challenge": {
+          "scenario": "You are performing arthroscopic debridement for severe osteoarthritis with osteophytes on the articular eminence and condyle.",
+          "question": "Why is the use of high-speed burrs on the roof of the glenoid fossa strictly avoided during arthroscopic chondroplasty?",
+          "options": [
+            "The roof of the fossa is composed of rubbery soft tissue that clogs the burr",
+            "The roof of the glenoid fossa is extremely thin (often <1 mm), posing a severe risk of intracranial perforation into the middle cranial fossa",
+            "High-speed burrs cause the camera lens to crack",
+            "Bone in the fossa has no blood supply"
+          ],
+          "correct_index": 1,
+          "rationale": "The bony roof of the glenoid fossa separating the joint from the middle cranial fossa and temporal lobe of the brain can be wafer thin (<1 mm). Bony instrumentation must never be aggressively applied to the fossa roof."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What is Grade IV chondromalacia?",
+        "back": "Complete loss of articular fibrocartilage with exposed, eburnated subchondral bone.",
+        "category": "Osteoarthritis"
+      },
+      {
+        "front": "Where do TMJ disc perforations most commonly occur?",
+        "back": "In the posterior attachment (retrodiscal pad) or lateral disc junction.",
+        "category": "Osteoarthritis"
+      },
+      {
+        "front": "What is the biochemical goal of high-volume arthroscopic lavage in osteoarthritis?",
+        "back": "Washing out cartilage-degrading enzymes (matrix metalloproteinases, collagenases) and inflammatory cytokines (IL-1, TNF-alpha).",
+        "category": "Osteoarthritis"
+      }
+    ]
+  },
+  {
+    "id": "ch13",
+    "number": 13,
+    "title": "Mandibular Dislocation & Hypermobility",
+    "part": "Part II: Management of Intra-Articular Pathology",
+    "author": "Joseph P. McCain, D.D.S., Ofilio J. Morales, D.M.D.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-247-256.pdf",
+    "pages": "246-250",
+    "estimated_minutes": 8,
+    "overview": "Management of chronic recurrent TMJ subluxation and open dislocation: Pathophysiology of capsular and ligamentous laxity, arthroscopic electrothermal capsulorrhaphy, sclerosing injections, and comparison with open surgical eminectomy or Dautrey procedures.",
+    "modules": [
+      {
+        "id": "m13_01",
+        "title": "Recurrent Dislocation Pathophysiology & Arthroscopic Capsulorrhaphy",
+        "read_time": "4 min",
+        "core_concept": "Recurrent mandibular dislocation occurs when the condyle translates anteriorly beyond the crest of the articular eminence and becomes locked in the infratemporal fossa, unable to return without manual reduction. Predisposing factors include generalized joint hypermobility (e.g. Ehlers-Danlos), steep articular eminence, and laxity of the temporomandibular capsule and lateral ligament.",
+        "surgical_technique": "Arthroscopic Electrothermal Capsulorrhaphy / Sclerotherapy: Under direct endoscopic visualization, a radiofrequency or holmium laser probe is applied in a grid pattern to the redundant, lax synovial lining of the posterior pouch and lateral capsule. Thermal energy contracts Type I collagen fibers by 30-50%, creating targeted scarification and tightening that prevents excessive forward condylar translation.",
+        "danger_zones_pearls": "Clinical Pearl: Electrothermal capsulorrhaphy provides a minimally invasive alternative to open bone removal (eminectomy). The patient must wear an intermaxillary elastic guide or limiting splint for 3-4 weeks post-operatively to allow scar tissue to consolidate without stretching.",
+        "key_terms": [
+          "Recurrent Dislocation",
+          "Capsular Laxity",
+          "Electrothermal Capsulorrhaphy",
+          "Collagen Shrinkage (30-50%)",
+          "Post-Op Limiting Splint"
+        ],
+        "challenge": {
+          "scenario": "A 19-year-old female with hypermobility spectrum disorder experiences weekly painful TMJ dislocations requiring emergency room reductions. Conservative splinting has failed, but she refuses open surgery (eminectomy).",
+          "question": "How does arthroscopic electrothermal capsulorrhaphy successfully treat recurrent condylar hypermobility?",
+          "options": [
+            "It paralyzes the masseter muscle with electrical shocks",
+            "Controlled thermal application to the lax posterior/lateral capsule denatures collagen, inducing 30-50% tissue shrinkage and subsequent fibrosis that restricts excessive condylar translation",
+            "It burns away the articular disc completely",
+            "It fuses the condyle to the temporal bone with cement"
+          ],
+          "correct_index": 1,
+          "rationale": "Thermal energy denatures collagen triple-helices, producing immediate 30-50% tissue contraction and subsequent fibrotic tightening of the redundant capsule, effectively preventing anterior subluxation."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What is the mechanism of arthroscopic capsulorrhaphy in recurrent dislocation?",
+        "back": "Thermal contraction of collagen in the lax posterior/lateral capsule followed by scar maturation.",
+        "category": "Hypermobility"
+      },
+      {
+        "front": "What postoperative protocol is required after capsulorrhaphy?",
+        "back": "Intermaxillary elastic limitation or guiding splints for 3-4 weeks to avoid stretching healing scar tissue.",
+        "category": "Hypermobility"
+      }
+    ]
+  },
+  {
+    "id": "ch14",
+    "number": 14,
+    "title": "Complications of Surgical Arthroscopy & Danger Zones",
+    "part": "Part II: Management of Intra-Articular Pathology",
+    "author": "Joseph P. McCain, D.D.S., Ofilio J. Morales, D.M.D.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-257-273.pdf",
+    "pages": "251-267",
+    "estimated_minutes": 16,
+    "overview": "The essential safety manual: Incidence, recognition, prevention, and management of neurological injuries (Facial nerve branches, Auriculotemporal nerve), vascular trauma (Superficial temporal artery/vein), middle cranial fossa penetration, auditory canal/middle ear injury, fluid extravasation, and instrument breakage.",
+    "modules": [
+      {
+        "id": "m14_01",
+        "title": "Neurological Complications: Facial Nerve (CN VII) & Auriculotemporal Nerve",
+        "read_time": "4 min",
+        "core_concept": "The temporal and zygomatic branches of the Facial Nerve (CN VII) cross the zygomatic arch and are at risk during anterior portal placement. Neuropraxia occurs in 1.5% to 3.0% of cases due to: 1) Direct mechanical blunt traction, 2) Pressure from local fluid extravasation, or 3) Local anesthetic diffusion. Most cases resolve completely within 2 to 8 weeks.",
+        "surgical_technique": "Prevention: Maintain anterior portal puncture within safe boundaries (<=20-25 mm anterior to tragus), use blunt dissection down to the capsule once skin is incised, and never use sharp trocars for triangulation. Auriculotemporal nerve injury causes temporary paresthesia or hypesthesia in the preauricular and temporal scalp.",
+        "danger_zones_pearls": "Legal & Clinical Pearl: If post-op temporal branch weakness (inability to wrinkle forehead or close eye forcefully) occurs, reassure the patient, protect the cornea with artificial tears/ointment, and document weekly recovery. Permanent CN VII transection is extraordinarily rare (<0.1%) when blunt technique is strictly adhered to.",
+        "key_terms": [
+          "CN VII Temporal Branch",
+          "Neuropraxia (2-8 weeks resolution)",
+          "Auriculotemporal Paresthesia",
+          "Corneal Lubrication Protocol",
+          "Blunt Triangulation"
+        ],
+        "challenge": {
+          "scenario": "In the recovery room following a difficult left operative TMJ arthroscopy with extensive anterior portal triangulation, the patient is unable to raise their left eyebrow or tightly close the left eye. Sensation over the cheek is intact.",
+          "question": "What is the most probable diagnosis and prognosis?",
+          "options": [
+            "Permanent transection of the main trunk of the facial nerve; immediate surgical exploration is required",
+            "Transient neuropraxia of the temporal/zygomatic branch of CN VII due to local fluid pressure, traction, or local anesthetic diffusion; expected to resolve spontaneously in 2 to 8 weeks",
+            "Cerebrovascular accident (stroke)",
+            "Damage to the mandibular division of the trigeminal nerve"
+          ],
+          "correct_index": 1,
+          "rationale": "Temporary neuropraxia of the temporal/zygomatic branches of the facial nerve is the most common cranial nerve complication, usually caused by fluid extravasation, traction, or local anesthetic, resolving completely in 2 to 8 weeks."
+        }
+      },
+      {
+        "id": "m14_02",
+        "title": "Vascular Trauma, Middle Cranial Fossa Penetration, & Fluid Extravasation",
+        "read_time": "4 min",
+        "core_concept": "Major anatomic hazards:\n1) Vascular: Superficial temporal artery and vein run immediately anterior to the tragus. Puncture can cause brisk hemorrhage or pseudoaneurysm. Direct compression for 10 minutes usually controls bleeding.\n2) Middle Cranial Fossa Penetration: Piercing the thin glenoid roof into the temporal lobe can cause intracranial hemorrhage, pneumocephalus, or CSF leak. Prevented by aiming anteriorly toward the thick eminence, never superiorly.\n3) Fluid Extravasation: Severe accumulation in the lateral pharyngeal, submandibular, or parapharyngeal spaces can compress the airway. Always monitor soft tissue swelling and palatal symmetry.",
+        "surgical_technique": "If return irrigation flow stops, immediately HALT inflow. Palpate the preauricular and temporal region. If massive swelling or airway encroachment occurs, maintain endotracheal tube intubation until fluid is absorbed (typically 12-24 hours) and administer IV dexamethasone.",
+        "danger_zones_pearls": "Absolute Safety Rule: Never force an instrument against unyielding resistance. If an instrument breaks inside the joint (e.g. blade, probe tip), NEVER poke blindly. Maintain the scope in place, illuminate the fragment, and retrieve it under direct vision with micro-graspers.",
+        "key_terms": [
+          "Superficial Temporal Artery",
+          "Middle Cranial Fossa Penetration",
+          "Intracranial Hemorrhage",
+          "Parapharyngeal Extravasation",
+          "Instrument Breakage Protocol"
+        ],
+        "challenge": {
+          "scenario": "During an operative arthroscopy, the return fluid volume suddenly drops to zero, and the circulating nurse notices bulging in the patient's ipsilateral submandibular and lateral neck region.",
+          "question": "What is the immediate, mandatory operative action?",
+          "options": [
+            "Increase the pump inflow pressure to 120 mmHg",
+            "Immediately stop fluid irrigation inflow, inspect the pharynx/neck for airway-threatening parapharyngeal extravasation, and assess the puncture tract",
+            "Inject 20 mL of antibiotic into the joint",
+            "Remove the endotracheal tube immediately"
+          ],
+          "correct_index": 1,
+          "rationale": "Loss of return flow accompanied by neck swelling signifies capsular breach and fluid extravasation into the deep cervical/parapharyngeal spaces. Irrigation must be stopped immediately to prevent catastrophic airway compromise."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What is the most frequent neurological complication of TMJ arthroscopy?",
+        "back": "Transient neuropraxia of the temporal branch of the Facial Nerve (CN VII), resolving in 2-8 weeks.",
+        "category": "Complications"
+      },
+      {
+        "front": "How is middle cranial fossa penetration prevented during trocar insertion?",
+        "back": "By directing the trocar anteriorly towards the thick articular eminence, never perpendicular or superior into the fossa roof.",
+        "category": "Complications"
+      },
+      {
+        "front": "What must be done immediately if irrigation outflow ceases and neck swelling develops?",
+        "back": "Immediately shut off inflow to prevent life-threatening parapharyngeal airway compression.",
+        "category": "Complications"
+      }
+    ]
+  },
+  {
+    "id": "ch15",
+    "number": 15,
+    "title": "Office Arthroscopy of the TMJ",
+    "part": "Part II: Management of Intra-Articular Pathology",
+    "author": "Joseph P. McCain, D.D.S., Ofilio J. Morales, D.M.D., Michael A. Menis, D.D.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-274-279.pdf",
+    "pages": "268-276",
+    "estimated_minutes": 8,
+    "overview": "Outpatient office-based diagnostic TMJ arthroscopy: Indications, local anesthesia techniques, ultra-thin 1.2 mm needle-scopes, cost-effectiveness, and outpatient recovery protocols.",
+    "modules": [
+      {
+        "id": "m15_01",
+        "title": "Ultra-Thin Needle Arthroscopy & Local Anesthetic Outpatient Protocols",
+        "read_time": "3 min",
+        "core_concept": "Office arthroscopy utilizes ultra-thin arthroscopes (1.2 mm to 1.5 mm diameter) with semi-rigid or gradient-index (GRIN) optics, performed in an outpatient clinic suite under local anesthesia with conscious sedation. It bridges the gap between clinical examination and full operating room general anesthesia.",
+        "surgical_technique": "Local anesthesia: Auriculotemporal block + capsular infiltration with 2% mepivacaine or lidocaine. A single puncture posterolateral technique is used with manual syringe lavage. The joint is inspected for synovitis, adhesions, or cartilage degradation to confirm diagnosis before committing to formal surgical intervention.",
+        "danger_zones_pearls": "Practice Pearl: Office needle arthroscopy is strictly diagnostic or limited to therapeutic lysis and lavage. Complex triangulation and disc plication should not be attempted in an office chair under local anesthesia due to patient movement and restricted operative instrumentation.",
+        "key_terms": [
+          "1.2 mm Ultra-Thin Needlescope",
+          "Office-Based TMJ Arthroscopy",
+          "Conscious Sedation",
+          "Diagnostic Validation",
+          "Single-Puncture L&L"
+        ],
+        "challenge": {
+          "scenario": "A surgeon considers performing office-based TMJ arthroscopy on an anxious patient under local anesthesia.",
+          "question": "What is the appropriate scope of practice for office-based TMJ arthroscopy using a 1.2 mm needle-scope?",
+          "options": [
+            "Complete bilateral open discectomy and costochondral rib grafting",
+            "Diagnostic visual validation of joint pathology and therapeutic lysis and lavage",
+            "Eminectomy with high-speed bone cutting burrs",
+            "Total joint prosthetic replacement"
+          ],
+          "correct_index": 1,
+          "rationale": "Office-based needle arthroscopy is indicated for diagnostic inspection and therapeutic lysis/lavage; invasive operative procedures requiring triangulation and bone reshaping require full general anesthesia."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What diameter scopes are utilized for office TMJ arthroscopy?",
+        "back": "Ultra-thin 1.2 mm to 1.5 mm needle-scopes.",
+        "category": "Office Arthroscopy"
+      },
+      {
+        "front": "What is the primary role of office TMJ arthroscopy?",
+        "back": "Diagnostic visual confirmation of pathology and therapeutic lysis and lavage under local anesthesia.",
+        "category": "Office Arthroscopy"
+      }
+    ]
+  },
+  {
+    "id": "ch16",
+    "number": 16,
+    "title": "Dental Considerations & Occlusal Splint Therapy",
+    "part": "Part III: Multi-Disciplinary Management",
+    "author": "Ricardo C. Gonzalez, D.M.D.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-280-289.pdf",
+    "pages": "277-285",
+    "estimated_minutes": 10,
+    "overview": "The interface between occlusion, splints, and arthroscopic outcomes: Flat plane stabilization splints vs anterior repositioning splints, timing of splint delivery relative to surgery, and management of secondary occlusal disharmonies.",
+    "modules": [
+      {
+        "id": "m16_01",
+        "title": "Splint Designs: Flat-Plane Stabilization vs Anterior Repositioning",
+        "read_time": "3 min",
+        "core_concept": "Occlusal splints are vital adjuncts to arthroscopy:\n1) Flat-Plane Stabilization Splint (Michigan splint): Provides uniform simultaneous centric contact, anterior canine guidance, eliminates occlusal interferences, and reduces nocturnal bruxism and joint loading.\n2) Anterior Repositioning Splint (ARS): Guides the mandible slightly forward into an edge-to-edge or protrusive position, maintaining the condyle beneath the intermediate zone of the disc to prevent daytime/nocturnal recollapse onto the retrodiscal pad.",
+        "surgical_technique": "ARS splints are used short-term (4-8 weeks) post-operatively in patients who underwent disc plication or acute reduction to unload healing posterior bilaminar tissues, followed by gradual transition back to a flat-plane stabilization appliance to prevent posterior open bite development.",
+        "danger_zones_pearls": "Dental Caveat: Never keep a patient on full-time anterior repositioning splints long-term (>3 months). Prolonged protrusive splinting results in permanent posterior open bite, intruding posterior teeth and super-erupting anterior units, requiring major orthodontic or orthognathic correction.",
+        "key_terms": [
+          "Flat-Plane Stabilization Splint",
+          "Anterior Repositioning Splint (ARS)",
+          "Posterior Open Bite Risk",
+          "Unloading Retrodiscal Pad",
+          "Canine Guidance"
+        ],
+        "challenge": {
+          "scenario": "A patient is placed on a full-time mandibular anterior repositioning splint (ARS) following arthroscopic disc plication. They wear the appliance 24 hours a day for 9 consecutive months without dental supervision.",
+          "question": "What dental complication is this patient at high risk of developing?",
+          "options": [
+            "Complete loss of tongue sensation",
+            "An acquired irreversible posterior open bite due to supra-eruption of anterior teeth and intrusion of posterior segments",
+            "Rapid bilateral condylar resorption within 48 hours",
+            "Enamel hypoplasia of all molars"
+          ],
+          "correct_index": 1,
+          "rationale": "Prolonged unmonitored use of anterior repositioning splints causes permanent occlusal alterations, leading to an intractable posterior open bite that requires orthodontic or surgical rehabilitation."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "What is the primary purpose of a post-operative flat-plane stabilization splint?",
+        "back": "To provide bilateral uniform occlusal contacts, eliminate muscle splinting, and unload the joint.",
+        "category": "Dental Splints"
+      },
+      {
+        "front": "What complication occurs if an anterior repositioning splint is worn unmonitored for many months?",
+        "back": "An irreversible posterior open bite.",
+        "category": "Dental Splints"
+      }
+    ]
+  },
+  {
+    "id": "ch17",
+    "number": 17,
+    "title": "Postoperative Physical Therapy & Rehabilitation",
+    "part": "Part III: Multi-Disciplinary Management",
+    "author": "Bruce R. Wilk, P.T., O.C.S.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-290-296.pdf",
+    "pages": "286-292",
+    "estimated_minutes": 10,
+    "overview": "Rehabilitation protocols authored by Physical Therapist Bruce R. Wilk: Immediate Day-1 passive range of motion, prevention of post-op adhesion recurrence, mechanical stretching devices (TheraBite), ultrasound, and isometric jaw stabilization exercises.",
+    "modules": [
+      {
+        "id": "m17_01",
+        "title": "Immediate Day 1 Passive Motion & Adhesion Recurrence Prevention",
+        "read_time": "3 min",
+        "core_concept": "The most common cause of long-term failure after successful arthroscopic lysis and lavage is fibrous re-adhesion formation due to post-operative joint immobilization. Physical therapy MUST begin on Post-Operative Day 1 with gentle passive range of motion exercises.",
+        "surgical_technique": "Protocol:\n1) Days 1-7: Passive stretch, tongue-to-palate opening exercises, gentle lateral excursions, target vertical opening >= 35 mm.\n2) Weeks 2-4: Active assisted opening, dynamic mechanical stretching (e.g. TheraBite device or tongue blade wedges), ultrasound and moist heat to masticatory muscles.\n3) Weeks 4-8: Isometric strengthening of opening/closing musculature and postural correction.",
+        "danger_zones_pearls": "Rehab Pearl: 'Movement is medicine for synovial joints.' The surgeon must instruct the patient that mild discomfort during opening exercises is expected and necessary to prevent newly formed fibrin strands from organizing into dense collagenous scar adhesions.",
+        "key_terms": [
+          "Post-Op Day 1 Passive Motion",
+          "Adhesion Recurrence",
+          "TheraBite Device",
+          "Target Opening (>=35 mm)",
+          "Tongue-to-Palate Exercise"
+        ],
+        "challenge": {
+          "scenario": "A patient undergoes successful arthroscopic lysis and lavage for a severe closed lock. The surgeon instructs the patient to keep their jaw completely motionless and immobilized for 4 weeks with a soft diet and no opening exercises.",
+          "question": "What is the probable negative clinical outcome of this 4-week complete joint immobilization?",
+          "options": [
+            "The patient will develop an extra pair of salivary glands",
+            "Fibrin exudate will organize into dense recurrent fibrous adhesions, resulting in joint hypomobility and relapsed closed lock",
+            "The mandibular condyle will double in length",
+            "The facial nerve will become permanently paralyzed"
+          ],
+          "correct_index": 1,
+          "rationale": "Immobilization after joint surgery allows postoperative hematoma and fibrin exudates to organize into dense fibrous scar adhesions, causing relapsed hypomobility. Immediate passive motion is essential."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "When should physical therapy begin following TMJ arthroscopy?",
+        "back": "On Post-Operative Day 1 (immediate gentle passive motion).",
+        "category": "Rehabilitation"
+      },
+      {
+        "front": "Why is joint immobilization after arthroscopy strictly contraindicated?",
+        "back": "It leads to rapid organization of fibrin into dense recurrent fibrous adhesions and joint relock.",
+        "category": "Rehabilitation"
+      },
+      {
+        "front": "What is the early post-operative vertical mouth opening target?",
+        "back": ">= 35 to 40 mm of unassisted interincisal opening.",
+        "category": "Rehabilitation"
+      }
+    ]
+  },
+  {
+    "id": "ch18",
+    "number": 18,
+    "title": "Psychological Evaluation & The TMJ Surgical Patient",
+    "part": "Part III: Multi-Disciplinary Management",
+    "author": "Mark T. Frazier, Ph.D.",
+    "pdf_file": "principles and practice of TMJ arthroscopy-297-301.pdf",
+    "pages": "293-301",
+    "estimated_minutes": 8,
+    "overview": "Psychological dimensions of temporomandibular disorders by Clinical Psychologist Mark T. Frazier. Somatization, secondary gain, depression, stress-induced bruxism, chronic central sensitization, and psychological screening tools (MMPI) to avoid operating on patients with somatoform pain disorders.",
+    "modules": [
+      {
+        "id": "m18_01",
+        "title": "Chronic Orofacial Pain, Somatization, & Surgical Gatekeeping",
+        "read_time": "3 min",
+        "core_concept": "Chronic orofacial pain frequently involves complex psychosocial comorbidity. While surgical arthroscopy cures mechanical derangements and local synovitis, it CANNOT cure central sensitization, fibromyalgia, major depression, or somatization disorder. Patients with high scores on hypochondriasis and hysteria scales often report persistent or worsened pain after technically perfect surgery.",
+        "surgical_technique": "Pre-operative evaluation must include psychological screening: assess pain chronicity (>6 months), sleep disruption, widespread body pain, catastrophic thinking, and history of multiple failed surgeries. Involve a behavioral pain psychologist before scheduling invasive procedures.",
+        "danger_zones_pearls": "Surgeon's Golden Rule: 'Never operate on an MRI image alone.' A displaced disc in an asymptomatic individual is a normal anatomic variant in 30% of the population. A displaced disc in a patient with severe somatization may be entirely incidental to their centrally mediated chronic pain.",
+        "key_terms": [
+          "Central Sensitization",
+          "Somatization Disorder",
+          "MMPI Psychological Profiling",
+          "Never Operate on MRI Alone",
+          "Multidisciplinary Pain Management"
+        ],
+        "challenge": {
+          "scenario": "A 36-year-old patient presents with generalized body aches, chronic neck/back pain, sleep apnea, severe depression, and vague bilateral facial tenderness. An MRI shows mild disc displacement. The patient has had 4 previous surgeries on other body parts without relief and demands 'immediate joint surgery to cure the pain.'",
+          "question": "What is the most prudent surgical recommendation?",
+          "options": [
+            "Perform emergency bilateral open joint discectomy",
+            "Decline immediate surgery; refer for comprehensive multidisciplinary chronic pain and behavioral psychology management to address central sensitization",
+            "Perform an immediate bilateral eminectomy",
+            "Reassure the patient that surgery has a 100% guarantee of curing their generalized body pain"
+          ],
+          "correct_index": 1,
+          "rationale": "Patients with centralized chronic pain and somatization do not benefit from localized joint surgery. Operating on incidental imaging findings in these individuals often worsens symptoms and fails to address the underlying neurobiological and psychological condition."
+        }
+      }
+    ],
+    "flashcards": [
+      {
+        "front": "Why is psychological screening essential prior to TMJ surgery?",
+        "back": "To identify central sensitization, depression, and somatization, preventing unnecessary surgery for non-articular pain.",
+        "category": "Psychology"
+      },
+      {
+        "front": "What percentage of normal asymptomatic individuals have disc displacement on MRI?",
+        "back": "Approximately 30% of asymptomatic individuals have disc displacement.",
+        "category": "Psychology"
+      }
+    ]
+  }
+];

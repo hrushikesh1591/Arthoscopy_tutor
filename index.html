@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMJ Arthroscopy Micro-Tutor | OMFS Masterclass</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <div class="app-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand">
+          <div class="brand-icon">🔬</div>
+          <div>
+            <h1 class="brand-title">TMJ Micro-Tutor</h1>
+            <span class="brand-subtitle">Principles & Practice • McCain</span>
+          </div>
+        </div>
+        <div class="streak-badge" id="streakBadge" title="Study Streak">
+          🔥 <span id="streakCount">1</span> Day Streak
+        </div>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="stats-card">
+        <div class="stat-item">
+          <div class="stat-val" id="completedCount">0 / 18</div>
+          <div class="stat-label">Modules Done</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" id="quizScorePct">0%</div>
+          <div class="stat-label">Quiz Accuracy</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" id="cardsMastered">0</div>
+          <div class="stat-label">Cards Mastered</div>
+        </div>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search landmarks, portals, pearls..." autocomplete="off">
+        <span class="search-icon">🔍</span>
+      </div>
+
+      <div class="part-filters">
+        <button class="part-btn active" data-part="all">All</button>
+        <button class="part-btn" data-part="Part I">Part I: Anatomy</button>
+        <button class="part-btn" data-part="Part II">Part II: Surgery</button>
+        <button class="part-btn" data-part="Part III">Part III: Rehab</button>
+      </div>
+
+      <!-- Chapter / Module List -->
+      <nav class="curriculum-nav" id="curriculumNav" aria-label="Curriculum Navigation">
+        <!-- Dynamically populated via JS -->
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="themeToggleBtn" class="utility-btn">🌓 Toggle Theme</button>
+        <button id="resetProgressBtn" class="utility-btn text-muted">↺ Reset Progress</button>
+      </div>
+    </aside>
+
+    <!-- Main Content Workspace -->
+    <main class="main-content">
+      <!-- Top Action Bar -->
+      <header class="top-bar">
+        <div class="active-breadcrumb" id="activeBreadcrumb">
+          <span class="badge-part">Part I: Background</span>
+          <span class="sep">›</span>
+          <span class="chapter-name">Chapter 3: Portals of Entry</span>
+        </div>
+        <div class="action-buttons">
+          <button id="listenAudioBtn" class="btn btn-secondary" title="Listen via Text-to-Speech">
+            🔊 Listen (Audio)
+          </button>
+          <button id="copyTelegramBtn" class="btn btn-secondary" title="Copy formatted Telegram daily message">
+            📱 Copy for Telegram
+          </button>
+          <button id="toggleCompleteBtn" class="btn btn-primary">
+            ✓ Mark as Studied
+          </button>
+        </div>
+      </header>
+
+      <!-- View Tabs: Lesson vs Spaced Repetition Flashcards vs Quiz Mode -->
+      <div class="view-tabs">
+        <button class="tab-btn active" data-tab="lesson">📖 Micro-Lesson Card</button>
+        <button class="tab-btn" data-tab="quiz">🧠 Surgical Challenge</button>
+        <button class="tab-btn" data-tab="flashcards">🗂️ Flashcard Deck (<span id="flashcardCountBadge">0</span>)</button>
+      </div>
+
+      <!-- Dynamic Tab Views -->
+      <div class="tab-viewport">
+        <!-- 1. Lesson View -->
+        <section id="lessonTabView" class="tab-content active">
+          <article class="surgical-card" id="lessonContainer">
+            <!-- Dynamically populated via app.js -->
+          </article>
+        </section>
+
+        <!-- 2. Quiz View -->
+        <section id="quizTabView" class="tab-content">
+          <div class="quiz-container" id="quizContainer">
+            <!-- Dynamically populated via app.js -->
+          </div>
+        </section>
+
+        <!-- 3. Flashcards View -->
+        <section id="flashcardsTabView" class="tab-content">
+          <div class="flashcards-container" id="flashcardsContainer">
+            <!-- Dynamically populated via app.js -->
+          </div>
+        </section>
+      </div>
+
+      <!-- Toast Notification Container -->
+      <div id="toast" class="toast hidden"></div>
+    </main>
+  </div>
+
+  <script src="curriculum_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
